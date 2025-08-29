@@ -34,7 +34,10 @@ export async function fetchNameplates(categories: any[]) {
         }
     }
 
-    return {"nameplate_configs": nameplates, palettes: [...new Set(nameplatePalettes)] };
+    return {
+        "nameplate_configs": nameplates.filter((item, index, self) => index === self.findIndex((t) => t.id === item.id)),
+        "palettes": [...new Set(nameplatePalettes)]
+    };
 }
 
 
@@ -50,6 +53,8 @@ export async function fetchAvatarDecorations(categories: any[]) {
         }
     }
 
-    return {"avatar_decoration_configs": avatarDecorations};
+    return {
+        "avatar_decoration_configs": avatarDecorations.filter((item, index, self) => index === self.findIndex((t) => t.id === item.id))
+    };
 }
 

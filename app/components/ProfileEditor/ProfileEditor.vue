@@ -66,7 +66,7 @@
       </button>
       <button class="compact-btn" @click="showNameplateModal = true">
         <span v-if="profile.nameplate">
-          <Nameplate
+          <NameplateView
               :nameplate="profile.nameplate"
               class="nameplate"
           />
@@ -110,6 +110,7 @@ import type {AvatarDecoration} from '~/types/avatarDecoration';
 import type {ProfileEffect} from '~/types/profileEffect';
 import type {Nameplate} from '~/types/nameplate';
 import type {Profile} from "~/types/profile";
+import NameplateView from "~/components/Nameplates/NameplateView.vue";
 
 const avatarInput = useTemplateRef('avatarInput')
 const bannerInput = useTemplateRef('bannerInput')
@@ -165,10 +166,6 @@ function onSelectProfileEffect(item: ProfileEffect | { id: null }) {
   if (!item.id) profile.value.profileEffect = null;
   else profile.value.profileEffect = item;
   showProfileEffectModal.value = false;
-}
-
-function setProfileEffectNull() {
-  profile.value.profileEffect = null;
 }
 
 function onSelectNameplate(item: Nameplate) {
@@ -400,8 +397,7 @@ async function onBannerChange(e: Event) {
 }
 
 .nameplate {
-  width: 60px;
-  height: 18px;
+  height: 24px;
   vertical-align: middle;
 }
 

@@ -4,7 +4,7 @@
     <div class="items-list" :class="{ 'nameplate-list': isNameplate }">
       <div v-for="item in items" :key="item.id" class="item-preview" :class="{selected: isSelected(item)}" @click="select(item)">
         <div v-if="isNameplate" class="nameplate-container">
-          <Nameplate :nameplate="item" />
+          <NameplateView :nameplate="item" />
         </div>
         <template v-else>
           <img v-if="item.thumbnailPreviewSrc || item.thumbnail" :src="item.thumbnailPreviewSrc || item.thumbnail" class="preview-img"/>
@@ -23,6 +23,7 @@
 <script setup lang="ts">
 import {ref, watch, defineEmits} from 'vue';
 import ProfileModal from './ProfileModal.vue';
+import NameplateView from "~/components/Nameplates/NameplateView.vue";
 
 const props = defineProps<{
   show: boolean,

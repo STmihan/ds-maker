@@ -1,7 +1,7 @@
 ﻿<template>
   <div class="profile" :style="profileThemeStyles">
     <div v-if="profile.profileEffect" class="profile-effect-container">
-      <ProfileEffectLayer v-for="(layer, index) in profile.profileEffect.effects"
+      <ProfilePreviewEffectLayer v-for="(layer, index) in profile.profileEffect.effects"
                           :key="index"
                           :effect="layer"
                           :force-reduced-motion="false"

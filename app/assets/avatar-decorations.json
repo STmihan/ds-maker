@@ -44,27 +44,6 @@
     },
     {
       "type": 0,
-      "id": "1404558257166618704",
-      "sku_id": "1404558257149710388",
-      "asset": "a_0f40021e5de1f2d71c30bfe6b2f4f647",
-      "label": "Circular glass window with green vines and leaves, featuring a small orange cat."
-    },
-    {
-      "type": 0,
-      "id": "1404558257191649351",
-      "sku_id": "1404558257174876300",
-      "asset": "a_25d3860e5fef3a3cfde4b89f411266fd",
-      "label": "Green tropical leaves dripping with water droplets."
-    },
-    {
-      "type": 0,
-      "id": "1404558257212756129",
-      "sku_id": "1404558257195847830",
-      "asset": "a_aa9afff2fe5c63067cad2e90d27daac6",
-      "label": "Delicate snowdrop flowers hang from green stems."
-    },
-    {
-      "type": 0,
       "id": "1402472280587632841",
       "sku_id": "1402472280575180922",
       "asset": "a_c267faa7eccd8517681a2a02d4d9957f",
@@ -90,20 +69,6 @@
       "sku_id": "1402472280499552306",
       "asset": "a_f3637655ae2af0c4507379ce7523ed0b",
       "label": "Vibrant, colorful accessories shimmer on purple hair."
-    },
-    {
-      "type": 0,
-      "id": "1402472280633770074",
-      "sku_id": "1402472280617123991",
-      "asset": "a_f783b451f252c5e34143898e97a8e585",
-      "label": "Giggling rainbow cat skulls spewing a rainbow."
-    },
-    {
-      "type": 0,
-      "id": "1402472280658935849",
-      "sku_id": "1402472280642289775",
-      "asset": "a_b9f89cd88eabf437777bf35f55e6126f",
-      "label": "Explosive \"RAWR!\" in dripping pink paint with electric stars and hearts."
     },
     {
       "type": 0,
@@ -142,31 +107,10 @@
     },
     {
       "type": 0,
-      "id": "1400163655185596456",
-      "sku_id": "1400163655164887110",
-      "asset": "a_4cb3f6e0d7869b30b2ed561dd205e7f8",
-      "label": "Gomah with demon horns glowing and cape swaying."
-    },
-    {
-      "type": 0,
       "id": "1400163655214956625",
       "sku_id": "1400163655194247300",
       "asset": "a_3ce0ab2726378ba762fcc5318b87ee6f",
       "label": "Shenron dragon with green whiskers flowing and body coiling."
-    },
-    {
-      "type": 0,
-      "id": "1400163655244316672",
-      "sku_id": "1400163655223607467",
-      "asset": "a_32b48fb7742f69d1f870bccfeb42044d",
-      "label": "Mini Goku with spiky black hair bouncing and orange gi fluttering."
-    },
-    {
-      "type": 0,
-      "id": "1400163655269482677",
-      "sku_id": "1400163655252967504",
-      "asset": "a_25e6d6c44079a0c58648295e591968b0",
-      "label": "Mini Vegeta with dark hair spiking up and blue armor gleaming."
     },
     {
       "type": 0,
@@ -181,13 +125,6 @@
       "sku_id": "1400163655307493417",
       "asset": "a_89f8a8380086df9c310ce007fad36f33",
       "label": "Mini Supreme Kai with rainbow aura pulsing and white hair shimmering."
-    },
-    {
-      "type": 0,
-      "id": "1400163655357563032",
-      "sku_id": "1400163655341047859",
-      "asset": "a_fe93404cffc76809692f753f4311234b",
-      "label": "Mini Piccolo with white turban flowing and green skin glowing."
     },
     {
       "type": 0,
@@ -247,20 +184,6 @@
     },
     {
       "type": 0,
-      "id": "1395905165856342107",
-      "sku_id": "1395905165839569179",
-      "asset": "a_75567bd9b6400f337d033428b24938a4",
-      "label": "Silver Surfer glides across the screen on his board, with planets orbiting behind him."
-    },
-    {
-      "type": 0,
-      "id": "1395905165885702236",
-      "sku_id": "1395905165869187102",
-      "asset": "a_80cbe054d728a2ad8fa6ec22c2a1e637",
-      "label": "The full team of heroes, including The Thing, Human Torch, Invisible Woman, and Mr. Fantastic, circles the avatar in a coordinated loop."
-    },
-    {
-      "type": 0,
       "id": "1394404301249712148",
       "sku_id": "1394404301232799868",
       "asset": "a_1f45ab29de170384897738fb5585975e",
@@ -310,27 +233,6 @@
     },
     {
       "type": 0,
-      "id": "1394404301228740639",
-      "sku_id": "1394404301211828324",
-      "asset": "a_6357695ea5c6a07227ec4ac36477f36c",
-      "label": "A tranquil duck floating peacefully in crystal-clear hot spring waters, surrounded by soft green mist."
-    },
-    {
-      "type": 0,
-      "id": "1394404301249712148",
-      "sku_id": "1394404301232799868",
-      "asset": "a_1f45ab29de170384897738fb5585975e",
-      "label": "An enchanting avatar with flowing fox-spirit tails, a duck floating in swirling water, and cherry blossoms  creating a mystical atmosphere."
-    },
-    {
-      "type": 0,
-      "id": "1394404301274878035",
-      "sku_id": "1394404301253771377",
-      "asset": "a_6f59e75226ea65207068cf672c35b023",
-      "label": "A majestic blue dragon spirit enveloped in swirling purple spiritual flames with ethereal wisps dancing around it."
-    },
-    {
-      "type": 0,
       "id": "1387888352556093553",
       "sku_id": "1387888352539312288",
       "asset": "a_764c32ea9eb11a78306da97918922f53",
@@ -366,24 +268,10 @@
     },
     {
       "type": 0,
-      "id": "1387888352677728367",
-      "sku_id": "1387888352660947104",
-      "asset": "a_0c5ed199312f3fe12f1ca2eba2ec9356",
-      "label": "The ultimate boss, G-Toilet, surrounds the avatar and powers up, firing intense energy beams from a cluster of central weapons."
-    },
-    {
-      "type": 0,
       "id": "1387888352652562674",
       "sku_id": "1387888352639975484",
       "asset": "a_f0f1b123ede61c1ea4a3329af6eedaef",
       "label": "Massive mechanical armor plates grind into place around the avatar, gears clanking as glowing red eyes light up."
-    },
-    {
-      "type": 0,
-      "id": "1387888352556093553",
-      "sku_id": "1387888352539312288",
-      "asset": "a_764c32ea9eb11a78306da97918922f53",
-      "label": "A retro-style toilet appears around the avatar, with an NPC male character head bobbing and eventually getting flushed down the toilet bowl."
     },
     {
       "type": 0,
@@ -429,27 +317,6 @@
     },
     {
       "type": 0,
-      "id": "1385050947847192677",
-      "sku_id": "1385050947834613820",
-      "asset": "a_1ffd338bf104b616ea5774244e46dbf6",
-      "label": "An adorable duck cheerfully dips its head underwater with carefree joy around the avatar, occasionally letting out a happy little quack!"
-    },
-    {
-      "type": 0,
-      "id": "1385050947872358450",
-      "sku_id": "1385050947855716503",
-      "asset": "a_8bb33310339200d8d40024583ed95d4a",
-      "label": "A large rainbow bubble encases the avatar, reflecting the shine of the sunlight"
-    },
-    {
-      "type": 0,
-      "id": "1385050947893592186",
-      "sku_id": "1385050947876556981",
-      "asset": "a_476b0b9a8d26b8693c65b401f17a9f2d",
-      "label": "Luminous fireflies float in gentle circles around the avatar, their delicate pink and golden glow casting a serene ambiance across the grassy meadow."
-    },
-    {
-      "type": 0,
       "id": "1293373563201388544",
       "sku_id": "1293373563184877618",
       "asset": "a_94191be95bb9c471ff17644f3639eb6d",
@@ -492,20 +359,6 @@
     },
     {
       "type": 0,
-      "id": "1366494385554067607",
-      "sku_id": "1366494385537028208",
-      "asset": "a_3513b3b45624e47a4855f6951eea484d",
-      "label": "A delicately pruned cybernetic pink bonsai tree adorns your avatar."
-    },
-    {
-      "type": 0,
-      "id": "1366494385579233281",
-      "sku_id": "1366494385562193961",
-      "asset": "a_7b3552536d367435c8fe7bfce8060b89",
-      "label": "Futuristic skyscrapers and Japanese temples glow with bright city lights, with cybernetic cherry blossoms in view."
-    },
-    {
-      "type": 0,
       "id": "1366494385600204892",
       "sku_id": "1366494385583165630",
       "asset": "a_94febf08c37b21ee5ed92c49ef98bf00",
@@ -524,48 +377,6 @@
       "sku_id": "1366494385629298768",
       "asset": "a_e88c3924d8b9b2ba0dac900a39838a32",
       "label": "A high tech oni mask glitches and flickers into effect, taking you into ghost-mode."
-    },
-    {
-      "type": 0,
-      "id": "1366494385663119451",
-      "sku_id": "1366494385650274315",
-      "asset": "a_70fddceac8bedb9bb317d6891e5521cd",
-      "label": "Your avatar wears a cybernetic jingasa that comes equipped with a holographic UI overlay."
-    },
-    {
-      "type": 0,
-      "id": "1379220458997809312",
-      "sku_id": "1379220458984968202",
-      "asset": "a_3bc2102f59a5b25882200da18b4e7b12",
-      "label": "A gilded frame glows with the White Mana symbol as angelic wings and sunbeams illuminate your avatar."
-    },
-    {
-      "type": 0,
-      "id": "1379220459018780783",
-      "sku_id": "1379220459005939773",
-      "asset": "a_e7809827e164edde3406af9b9067138d",
-      "label": "The Blue Mana symbol embedded in your avatar glows with power as it summons swirls of arcane energy."
-    },
-    {
-      "type": 0,
-      "id": "1379220459039752332",
-      "sku_id": "1379220459026911342",
-      "asset": "a_8464c412fa5d11184e90540413d5752b",
-      "label": "Purple flames and skeletal hands grasp your Black Mana-framed avatar, emitting necrotic energy."
-    },
-    {
-      "type": 0,
-      "id": "1379220459060723832",
-      "sku_id": "1379220459047882776",
-      "asset": "a_c5692ec4f3d1ead985510fff1e4802c7",
-      "label": "Dragon wings and red lightning erupt from your avatar's Red Mana symbol."
-    },
-    {
-      "type": 0,
-      "id": "1379220459089956924",
-      "sku_id": "1379220459068854355",
-      "asset": "a_fcb35ee1a73fd3ce46d2cff993afb48e",
-      "label": "Rampant vines grow and frame your avatar, emanating from your powerful Green Mana symbol."
     },
     {
       "type": 0,
@@ -622,20 +433,6 @@
       "sku_id": "1373015260507930664",
       "asset": "a_3af2ad1b0eb074a2a1691a48a710555a",
       "label": "A mini version of Shigaraki stands next to your avatar activating his 'Decay' Quirk."
-    },
-    {
-      "type": 0,
-      "id": "1373015260369260656",
-      "sku_id": "1373015260356935744",
-      "asset": "a_218a429c396bd5c924d70c0c1358db39",
-      "label": "Your avatar wears Deku's mask."
-    },
-    {
-      "type": 0,
-      "id": "1373015260394426410",
-      "sku_id": "1373015260377907393",
-      "asset": "a_47b3f88e17a2d43a318a5142dc3d788d",
-      "label": "Your avatar wears Bakugo's headgear and gauntlets."
     },
     {
       "type": 0,
@@ -674,13 +471,6 @@
     },
     {
       "type": 0,
-      "id": "1373015260520255588",
-      "sku_id": "1373015260507930664",
-      "asset": "a_3af2ad1b0eb074a2a1691a48a710555a",
-      "label": "A mini version of Shigaraki stands next to your avatar activating his 'Decay' Quirk."
-    },
-    {
-      "type": 0,
       "id": "1369434230643232898",
       "sku_id": "1369434230630780958",
       "asset": "a_cffaa50ce82fa79b09e2e0078e8b18bb",
@@ -709,31 +499,10 @@
     },
     {
       "type": 0,
-      "id": "1369434230643232898",
-      "sku_id": "1369434230630780958",
-      "asset": "a_cffaa50ce82fa79b09e2e0078e8b18bb",
-      "label": "Young crops grow as a watering can tends to them."
-    },
-    {
-      "type": 0,
-      "id": "1369434230664204493",
-      "sku_id": "1369434230651752469",
-      "asset": "a_cec06be6560073121dc9e0bfd9cb536f",
-      "label": "A fisher cat in a small boat reels in a fish for dinner!"
-    },
-    {
-      "type": 0,
       "id": "1369434230685438084",
       "sku_id": "1369434230672588820",
       "asset": "a_8de95a1173704216bf5f6ce7f1221bcf",
       "label": "A busy bee takes a quick nap on vibrant spring flowers."
-    },
-    {
-      "type": 0,
-      "id": "1369434230706409573",
-      "sku_id": "1369434230693695628",
-      "asset": "a_1953da70cb693d9a27178eca180f8cb5",
-      "label": "The local village baker bear shows off today's delicious batch of pastries."
     },
     {
       "type": 0,
@@ -779,13 +548,6 @@
     },
     {
       "type": 0,
-      "id": "1365410896112910346",
-      "sku_id": "1365410896096268368",
-      "asset": "a_305fc9222776843327e6d91d2146eb3c",
-      "label": "The Millennium Falcon flies around in space and prepares to jump into hyperspace."
-    },
-    {
-      "type": 0,
       "id": "1365410896129560758",
       "sku_id": "1365410896117239919",
       "asset": "a_81468ad7bd35e0017db82ea35ab63ecb",
@@ -811,13 +573,6 @@
       "sku_id": "1357589632401018950",
       "asset": "a_2e158540cee034330f665860cd948891",
       "label": "Mashing a white F key with enthusiastic little pats of respect."
-    },
-    {
-      "type": 0,
-      "id": "1357589632505872466",
-      "sku_id": "1357589632480579665",
-      "asset": "a_17208e22d55ca02e33df1f0f500407f5",
-      "label": "Your avatar takes a big huff from a mask attached to a copium gas tank."
     },
     {
       "type": 0,
@@ -898,13 +653,6 @@
     },
     {
       "type": 0,
-      "id": "1354894010707349564",
-      "sku_id": "1354894010690306149",
-      "asset": "a_0cc586e65b3cd90c27c42477ede2cc97",
-      "label": "A piece of bread with cute doggy features and a charming pink bow tie frames your avatar."
-    },
-    {
-      "type": 0,
       "id": "1354894010728321204",
       "sku_id": "1354894010715471974",
       "asset": "a_4945e17c8ddf8ca470e505c07f191400",
@@ -933,24 +681,10 @@
     },
     {
       "type": 0,
-      "id": "1352407446295019690",
-      "sku_id": "1352407446282440704",
-      "asset": "a_b524fa5c3f80fbea3865a5d130ab5aef",
-      "label": "An excited cat nomming your avatar. Looks like you're the chew toy."
-    },
-    {
-      "type": 0,
       "id": "1352407446320185356",
       "sku_id": "1352407446303412304",
       "asset": "a_0e50ebc16aa67676687222d0b9b51eb2",
       "label": "A beautiful brown egg. And then there's you."
-    },
-    {
-      "type": 0,
-      "id": "1352407446341157006",
-      "sku_id": "1352407446328578078",
-      "asset": "a_a10e6d86819ba0ebdade391d042dd2f5",
-      "label": "Your avatar is snugly tucked inside a crispy chicken nugget."
     },
     {
       "type": 0,
@@ -972,34 +706,6 @@
       "sku_id": "1352407446391492660",
       "asset": "a_780cd1b7e878dce85d20c7ee495a86fe",
       "label": "A buffering icon spinning over your forehead... this might take a while."
-    },
-    {
-      "type": 0,
-      "id": "1346499610759397416",
-      "sku_id": "1346499610742493305",
-      "asset": "a_49ed38f73003e2e182f77190af0a0a56",
-      "label": "Karina’s signature heart symbol glows around your avatar. Her Rocket Puncher attack strikes the screen and releases a flurry of hearts upon impact."
-    },
-    {
-      "type": 0,
-      "id": "1346499610780368926",
-      "sku_id": "1346499610763464776",
-      "asset": "a_35713167cc82e0f408c26dfc032a7f0f",
-      "label": "Giselle’s fuchsia moon symbol frames your avatar. Her Frame of Light ability casts a glowing, translucent energy ring."
-    },
-    {
-      "type": 0,
-      "id": "1346499610801340508",
-      "sku_id": "1346499610788630538",
-      "asset": "a_6912c651e979fbfdc479ed082a571513",
-      "label": "Winter's signature star symbol frames your avatar. Her sword emerges and slices through the air, creating a frosty trail of snowflakes."
-    },
-    {
-      "type": 0,
-      "id": "1346499610826506250",
-      "sku_id": "1346499610809602128",
-      "asset": "a_cdca4a092a03b16b94e50289fe3f7bd1",
-      "label": "Ningning’s yellow butterfly symbol frames your avatar. Three digital butterflies fly into view from a futuristic HUD interface."
     },
     {
       "type": 0,
@@ -1066,13 +772,6 @@
     },
     {
       "type": 0,
-      "id": "1343751620978147423",
-      "sku_id": "1343751620965564426",
-      "asset": "a_fb1fab5c0a30f0a89a7cd5fad873c6f0",
-      "label": "Two glowing celestial whales playfully swim in a circle around your avatar, leaving trails of sparkling particles behind them."
-    },
-    {
-      "type": 0,
       "id": "1343751621166891030",
       "sku_id": "1343751621146054727",
       "asset": "a_c9761eb6d77eef5d4f10deb6ab4a3d87",
@@ -1105,13 +804,6 @@
       "sku_id": "1341506444150702080",
       "asset": "a_df5442048d7d5b8b8906f3a9cd93f0ab",
       "label": "Bold 'zuzun' characters and dynamic, wavy lines creating a vibrant rumbling effect around your avatar."
-    },
-    {
-      "type": 0,
-      "id": "1341506444201033728",
-      "sku_id": "1341506444188450816",
-      "asset": "a_45f7f9975255971b197d34d77fb50ede",
-      "label": "Magical purple energy encircles your avatar, with sparkling pink stars and hearts swirling around in a cyclone-like dance."
     },
     {
       "type": 0,
@@ -1192,13 +884,6 @@
     },
     {
       "type": 0,
-      "id": "1336483992374874142",
-      "sku_id": "1336483992358359144",
-      "asset": "a_a1c0581971d4a296908829289fea2c47",
-      "label": "Glittering ruby hearts surround your avatar, each heart shimmering with sparkles and shine like gems."
-    },
-    {
-      "type": 0,
       "id": "1333278032802086983",
       "sku_id": "1333278032789635082",
       "asset": "a_ccee9031d66bc0f2d7ed0c6178d01784",
@@ -1224,27 +909,6 @@
       "sku_id": "1333278032768536596",
       "asset": "a_fcb0de14da228879b455f1f1d3919749",
       "label": "A regal laurel wreath of gold encircles your avatar, symbolizing the grandeur of civilization's mightiest rulers."
-    },
-    {
-      "type": 0,
-      "id": "1333278032802086983",
-      "sku_id": "1333278032789635082",
-      "asset": "a_ccee9031d66bc0f2d7ed0c6178d01784",
-      "label": "A hex tile made of gold outlines your avatar like a glorious portrait frame."
-    },
-    {
-      "type": 0,
-      "id": "1333278032827252798",
-      "sku_id": "1333278032814673940",
-      "asset": "a_9d95e36bc282523fddc63d31a8d01091",
-      "label": "Your avatar’s hex tile morphs through desert, lush forests, and oceanic blues - perfect for those who love to explore."
-    },
-    {
-      "type": 0,
-      "id": "1333278032848224276",
-      "sku_id": "1333278032835645450",
-      "asset": "a_8dddba8c2a9704a943bb7020a3d0a418",
-      "label": "Desert, forest, and sea hex tiles frame your avatar, capturing the variety and wonder of your growing civilization."
     },
     {
       "type": 0,
@@ -1290,13 +954,6 @@
     },
     {
       "type": 0,
-      "id": "1329609528538566698",
-      "sku_id": "1329609528525979658",
-      "asset": "a_d859cee893cffd5dd0fa17a6caea44e0",
-      "label": "A red snake in lunar year colors coils gracefully around your avatar for a scaly hug."
-    },
-    {
-      "type": 0,
       "id": "1329609528563732521",
       "sku_id": "1329609528546693170",
       "asset": "a_2e55d644e11acb6253dfa422eff16dfd",
@@ -1325,45 +982,10 @@
     },
     {
       "type": 0,
-      "id": "1202073807658164295",
-      "sku_id": "1202073775840178206",
-      "asset": "a_0f4f1b40921ce680b60007e94427d1f2",
-      "label": "A string of firecrackers appears to the left of the avatar, and after a moment, lights off with a flurry of sparks!"
-    },
-    {
-      "type": 0,
       "id": "1202073979167461406",
       "sku_id": "1202073975178665984",
       "asset": "a_445566ed965b2c1632a5b45c92f32d11",
       "label": "A dragon's mouth perches precariously around the avatar. In a swift movement, the dragon chomps down, smiling and revealing its face."
-    },
-    {
-      "type": 0,
-      "id": "1202445980377817179",
-      "sku_id": "1202445890909110323",
-      "asset": "a_1b1df0ae8c2d34afd85da5c22a0d761a",
-      "label": "Two red envelopes sit on the left side of the avatar. One envelope moves forward and opens up to ingest a number of gold coins."
-    },
-    {
-      "type": 0,
-      "id": "1202074104945971311",
-      "sku_id": "1202074101343322184",
-      "asset": "a_50b440810b1bbd89f6284f36d40ad0af",
-      "label": "Two koi fish swimming beneath the water covering the avatar surface, and dive down repeatedly as they swim in circles."
-    },
-    {
-      "type": 0,
-      "id": "1326333074052612216",
-      "sku_id": "1326333074040164472",
-      "asset": "a_1acbe609daec21fa5b866df9e5a42cb7",
-      "label": "Your avatar wears a stylish pair of cat ears and goggles with glass lenses. The ears and lenses flick and twitch mechanically, as if scanning your surroundings."
-    },
-    {
-      "type": 0,
-      "id": "1326333074073583708",
-      "sku_id": "1326333074061135992",
-      "asset": "a_459cf2afde41f01559a4a4204ab81767",
-      "label": "Mechanical blossoms with blue-and-white petals swivel and unfold, releasing gentle puffs of steam each time they bloom."
     },
     {
       "type": 0,
@@ -1556,13 +1178,6 @@
     },
     {
       "type": 0,
-      "id": "1314020996348641370",
-      "sku_id": "1314020996327542894",
-      "asset": "a_386445551be850bb16b73a225d0d0602",
-      "label": "Colorful polar lights in hues of pink, orange, cyan, and fuschia and twinkling stars shimmer over your avatar."
-    },
-    {
-      "type": 0,
       "id": "1314020996378001438",
       "sku_id": "1314020996361093171",
       "asset": "a_a7e6467b5332ab7a2b725aa225e6c752",
@@ -1591,31 +1206,10 @@
     },
     {
       "type": 0,
-      "id": "1313682954589044736",
-      "sku_id": "1309668861620260874",
-      "asset": "a_60cb281fac6d8f558efaf6dd9fe4dbe4",
-      "label": "The avatar wears Lofi Girl's signature red scarf while listening to lofi music playing from lofi-branded headphones, mastering the 'chill and cozy' look."
-    },
-    {
-      "type": 0,
-      "id": "1313683034377031680",
-      "sku_id": "1309668861645426729",
-      "asset": "a_96f65d0aacc4a94b50ef7fb656d5826d",
-      "label": "Lofi Girl's friendly orange cat companion lies happily on its back, hugging your avatar on its belly, eyes closed as it playfully gnaws on your avatar like a chew toy."
-    },
-    {
-      "type": 0,
       "id": "1309668861691433070",
       "sku_id": "1309668861674786877",
       "asset": "a_6649e251a23f24935471ee02c212675b",
       "label": "Lofi Girl's sleepy cow companion dozes on top of your avatar, orange headphones fitted snugly on its head while snoozing out Zzz's, probably dreaming of mellow beats."
-    },
-    {
-      "type": 0,
-      "id": "1313683086050988114",
-      "sku_id": "1309668861704146984",
-      "asset": "a_28fbe43ba1ee217576dee69712bbb628",
-      "label": "Lofi Girl's iconic study desk lamp shines its light on a pen scribbling notes onto a notebook. Her red-striped cup filled with pencils sits nearby, all guarded by her loyal moose plushie."
     },
     {
       "type": 0,
@@ -1668,48 +1262,6 @@
     },
     {
       "type": 0,
-      "id": "1262491137386614813",
-      "sku_id": "1262491137386614812",
-      "asset": "a_914f20f4984a11b5255f0e42c661fa5b",
-      "label": "The avatar wears SpongeBob's signature outfit while twirling a spatula with ease, ready to cook up some Krabby Pattys."
-    },
-    {
-      "type": 0,
-      "id": "1262491137394868306",
-      "sku_id": "1262491137394868305",
-      "asset": "a_bba669bfb28f492b64852e00fde4989d",
-      "label": "SpongeBob spreads his hands wide, revealing a glorious rainbow above the avatar. You can practically hear him say \"Imagination.\""
-    },
-    {
-      "type": 0,
-      "id": "1262491137394868309",
-      "sku_id": "1262491137394868308",
-      "asset": "a_0f7fa66bc185c858f92a7918ea4dd47a",
-      "label": "Patrick clumsily hammers down a nail into a plank taped to his forehead. No one knows what he's trying to accomplish but he's trying his best."
-    },
-    {
-      "type": 0,
-      "id": "1262491137394868312",
-      "sku_id": "1262491137394868311",
-      "asset": "a_d9ff5ff133ed9176895a4a2b5e58f1b8",
-      "label": "Flower clouds gently sway around the avatar, adding a lovely Bikini Bottom ambiance."
-    },
-    {
-      "type": 0,
-      "id": "1262491690900656259",
-      "sku_id": "1262491690900656258",
-      "asset": "a_4db5b8518672197225c69fe72f07a945",
-      "label": "Gary the Snail stretches his long eyes to take a quick peek outside from SpongeBob's window."
-    },
-    {
-      "type": 0,
-      "id": "1262491690900656262",
-      "sku_id": "1262491690900656261",
-      "asset": "a_96e669a80b3a3e3d57035293750291ed",
-      "label": "The avatar dons Sandy Cheek's stylish underwater helmet, with air bubbles rising around it. Don't forget to refill the oxygen tank."
-    },
-    {
-      "type": 0,
       "id": "1262491690900656265",
       "sku_id": "1262491690900656264",
       "asset": "a_2249f064370a3d5e9f0e7189099d521e",
@@ -1735,20 +1287,6 @@
       "sku_id": "1306330662940311726",
       "asset": "a_fa39ba4d9eff38d2eeb47ebcb623e4ca",
       "label": "The avatar wears a snug pink headset with cat ears, perfect for those cozy gaming vibes."
-    },
-    {
-      "type": 0,
-      "id": "1306330662982258758",
-      "sku_id": "1306330662965477478",
-      "asset": "a_5b1319abfc9f928479b68a73635f591d",
-      "label": "The avatar looks as sweet as ever as it sits inside a plastic cup of delicious pink bubble tea filled with vibrant, purple pearls. A brightly colored straw is poked into the top of the lid."
-    },
-    {
-      "type": 0,
-      "id": "1306330663007424512",
-      "sku_id": "1306330662990643252",
-      "asset": "a_f081c6b2c85c5ebe5df42f1c24d45bb5",
-      "label": "A cuddly pink bunny plopped comfortably atop the avatar is awoken by sounds coming from a nearby matching pink bunny microphone. The bunny frets not and resumes slumber."
     },
     {
       "type": 0,
@@ -1794,24 +1332,10 @@
     },
     {
       "type": 0,
-      "id": "1306752744274792448",
-      "sku_id": "1306752744258011166",
-      "asset": "a_af5ee420e5f860ff2cdbb5fa4633f2cf",
-      "label": "The mysterious Anomaly has taken over your avatar, its weblike surface stretching and wrapping around it endlessly."
-    },
-    {
-      "type": 0,
       "id": "1306752744295497789",
       "sku_id": "1306752744278982737",
       "asset": "a_27f77b8147892bc271658ba19e4ecc06",
       "label": "A circle of black rose petals bloom over the avatar, then smolder away in flames. The Black Rose sends their regards."
-    },
-    {
-      "type": 0,
-      "id": "1303490165091598386",
-      "sku_id": "1303490165074825296",
-      "asset": "a_9bc421cef4bdcfffeb2344b44ad91b44",
-      "label": "The avatar dons Jinx's signature hairstyle. Flashing grafiti create the illusion as if Jinx was making mischievous faces over your likeness."
     },
     {
       "type": 0,
@@ -1878,13 +1402,6 @@
     },
     {
       "type": 0,
-      "id": "1298033986588639306",
-      "sku_id": "1298033986571866112",
-      "asset": "a_be111e4303d634c55500202a61656e0b",
-      "label": "The avatar wears the ears and fluffy tails of a mystical kitsune. Its vibrant furs are splashed in fiery fuchsia pinks, whites, and purples."
-    },
-    {
-      "type": 0,
       "id": "1298033986609872989",
       "sku_id": "1298033986592837754",
       "asset": "a_47c0f4b4a837894998d5a316acf74f87",
@@ -1899,45 +1416,10 @@
     },
     {
       "type": 0,
-      "id": "1298033986660204585",
-      "sku_id": "1298033986643169360",
-      "asset": "a_535aa3354b1a7395c271bb2f53be4275",
-      "label": "Two magical, glowing fairies flutter around the avatar, dancing playfully with each other in the air."
-    },
-    {
-      "type": 0,
       "id": "1298033986685108358",
       "sku_id": "1298033986668335135",
       "asset": "a_98c7600d304b86ca3b18272e1da05559",
       "label": "Antlers from a mystical crystal elk crown the avatar. The antlers shimmer with the magic of ancient snowstorms from winters past."
-    },
-    {
-      "type": 0,
-      "id": "1298033986710536242",
-      "sku_id": "1298033986693500960",
-      "asset": "a_efe3081ee3359a77b515575b5f7bc8c0",
-      "label": "Two elegant mermaids swim gracefully around the avatar in a mesmerizing dance."
-    },
-    {
-      "type": 0,
-      "id": "1293373563201388544",
-      "sku_id": "1293373563184877618",
-      "asset": "a_94191be95bb9c471ff17644f3639eb6d",
-      "label": "Six glowing purple dice orbit the avatar. A beam of light strikes through all of them, causing them to spin and shimmer with sparkles of magic."
-    },
-    {
-      "type": 0,
-      "id": "1293373563226554419",
-      "sku_id": "1293373563210043442",
-      "asset": "a_f8ffeba6f389d1475c8794ca88b59785",
-      "label": "Six glowing azure dice orbit the avatar. A beam of light strikes through all of them, causing them to spin and shimmer with sparkles of magic."
-    },
-    {
-      "type": 0,
-      "id": "1293373563373355008",
-      "sku_id": "1293373563352649961",
-      "asset": "a_a842a9cf76fdaf91a6354937b31ecdef",
-      "label": "On its back, an adorable, playful baby displacer beast swings and plays with its tentacle barbs. Be careful when it grows up!"
     },
     {
       "type": 0,
@@ -1962,13 +1444,6 @@
     },
     {
       "type": 0,
-      "id": "1285465421046087690",
-      "sku_id": "1285465421029576704",
-      "asset": "a_68cb6c21d6222cd9285c08068f39873d",
-      "label": "With Ryu's hair and iconic red headband, the avatar brings its hands together to charge up and fire his signature ki blast."
-    },
-    {
-      "type": 0,
       "id": "1285465421067059250",
       "sku_id": "1285465421050548345",
       "asset": "a_bba133b88b21e1b4a36637335536c3a8",
@@ -1980,13 +1455,6 @@
       "sku_id": "1285465421071519825",
       "asset": "a_f524554b7f42a214d15c226c344a5357",
       "label": "Ken's wild blond hair and curled hands decorate the avatar. The hands begin to motion and carry out Ken's legendary Shoryuken uppercut move."
-    },
-    {
-      "type": 0,
-      "id": "1285465421113196617",
-      "sku_id": "1285465421096685639",
-      "asset": "a_1e8cb6070b13f775a41384c84c5a53e1",
-      "label": "With Akuma's beard and sinister wisps of demon energy, the avatar transforms into a fierce warrior, ready to unleash destruction."
     },
     {
       "type": 0,
@@ -2011,24 +1479,10 @@
     },
     {
       "type": 0,
-      "id": "1285465421230637126",
-      "sku_id": "1285465421214126100",
-      "asset": "a_66f69effef43b4f7c4f5d0739079a947",
-      "label": "The avatar dons M. Bison's signature cap while summoning menacing purple energy orbs that radiate dark power from each of his hands."
-    },
-    {
-      "type": 0,
       "id": "1282816431863500920",
       "sku_id": "1282816431850782730",
       "asset": "a_eb003dc2b5c6d85c8e18cc9336fcdad3",
       "label": "The avatar is decorated with sprouted and blooming chrysanthemums that continuously change from pink to blue as a pair of glowing butterflies - one blue and the other pink as well - encircle the avatar."
-    },
-    {
-      "type": 0,
-      "id": "1282816431888662589",
-      "sku_id": "1282816431871754281",
-      "asset": "a_a44e9335ea869639fdf812f3642a56a6",
-      "label": "The avatar is surrounded by a rotating streak of light that starts off with the fiery red of the sun and smoothly transitions into the tranquil midnight blue of the moon."
     },
     {
       "type": 0,
@@ -2172,27 +1626,6 @@
     },
     {
       "type": 0,
-      "id": "1184292703937253386",
-      "sku_id": "1144056139584127058",
-      "asset": "a_21c7a425b490017478a5558f33f33c63",
-      "label": "Toast Being Eaten, Animated"
-    },
-    {
-      "type": 0,
-      "id": "1277733174998208613",
-      "sku_id": "1277733174985887754",
-      "asset": "a_280c991d6e124b13e4994941c02e00b4",
-      "label": "The avatar is framed with a piece of burnt toast. Despite its condition, the toast gets gobbled up in a few bites. Why would anyone re-toast their toast?"
-    },
-    {
-      "type": 0,
-      "id": "1179493515076579376",
-      "sku_id": "1179493515076579375",
-      "asset": "a_ea8e2e628bacdddb1ef18cb382aa454c",
-      "label": "A strange humanoid-looking creature farts, then smells its own stinky fumes. Guess that's why its earned the name Stinkums..."
-    },
-    {
-      "type": 0,
       "id": "1277733175040151613",
       "sku_id": "1277733175027830814",
       "asset": "a_aae302f5cec90c98beab424443d0f04d",
@@ -2225,20 +1658,6 @@
       "sku_id": "1271174241860980907",
       "asset": "a_a21393f8a2cb8eafbdfb5364fb1cbbae",
       "label": "A demon Oni mask breathes out smoky fumes, adding to its fearsome and ominous look."
-    },
-    {
-      "type": 0,
-      "id": "1271174348392235080",
-      "sku_id": "1271174324375519273",
-      "asset": "a_3d1e6078b2e4c8865e0ad0f429d651b1",
-      "label": "An avatar donning a straw hat tilts its head down dramatically under drizzling rain. Cue the boss music."
-    },
-    {
-      "type": 0,
-      "id": "1271174676797853838",
-      "sku_id": "1271174640026255380",
-      "asset": "a_13913a00bd9990ab4102a3bf069f0f3f",
-      "label": "Cherry blossoms fall gently from a sakura tree, both beautifully etched in ink around the avatar."
     },
     {
       "type": 0,
@@ -2277,20 +1696,6 @@
     },
     {
       "type": 0,
-      "id": "1274070185090879567",
-      "sku_id": "1268362891946627103",
-      "asset": "a_90e0dce3cc48c4a9607b6d41209c737e",
-      "label": "Metallic vines and thorns tightly wrap and writhe around the avatar. A metallic symbol shaped after the VALORANT Champions Tour logo then appears before being absorbed into the avatar's center."
-    },
-    {
-      "type": 0,
-      "id": "1266160780961906688",
-      "sku_id": "1266160780928352268",
-      "asset": "a_da532f804b47f1681006c2996eb07b2a",
-      "label": "Agent Yoru's hands appear, ripping open a new dimension over your avatar that lets him drift between dimensions, unable to be detected by enemies and even yourself."
-    },
-    {
-      "type": 0,
       "id": "1266160781008044135",
       "sku_id": "1266160780978556969",
       "asset": "a_62cd9d7c0031a7c1eb5ad5cc96992189",
@@ -2312,13 +1717,6 @@
     },
     {
       "type": 0,
-      "id": "1220513996889919548",
-      "sku_id": "1220513995308400680",
-      "asset": "a_09de63526a45be1ddac70e84718ee04a",
-      "label": "A kill icon displaying 5 confirmed kills."
-    },
-    {
-      "type": 0,
       "id": "1220513986051837952",
       "sku_id": "1220513984273186816",
       "asset": "a_c45abe8c7585fdb41b8d8d4d666f1588",
@@ -2337,55 +1735,6 @@
       "sku_id": "1220514048068812901",
       "asset": "a_904b1989077c91fca1168d39bfcaa0a4",
       "label": "The avatar equips throwing knives from Jett's signature Blade Storm ability."
-    },
-    {
-      "type": 0,
-      "id": "1262491137386614813",
-      "sku_id": "1262491137386614812",
-      "asset": "a_914f20f4984a11b5255f0e42c661fa5b",
-      "label": "The avatar wears SpongeBob's signature outfit while twirling a spatula with ease, ready to cook up some Krabby Pattys."
-    },
-    {
-      "type": 0,
-      "id": "1262491137394868306",
-      "sku_id": "1262491137394868305",
-      "asset": "a_bba669bfb28f492b64852e00fde4989d",
-      "label": "SpongeBob spreads his hands wide, revealing a glorious rainbow above the avatar. You can practically hear him say \"Imagination.\""
-    },
-    {
-      "type": 0,
-      "id": "1262491137394868309",
-      "sku_id": "1262491137394868308",
-      "asset": "a_0f7fa66bc185c858f92a7918ea4dd47a",
-      "label": "Patrick clumsily hammers down a nail into a plank taped to his forehead. No one knows what he's trying to accomplish but he's trying his best."
-    },
-    {
-      "type": 0,
-      "id": "1262491137394868312",
-      "sku_id": "1262491137394868311",
-      "asset": "a_d9ff5ff133ed9176895a4a2b5e58f1b8",
-      "label": "Flower clouds gently sway around the avatar, adding a lovely Bikini Bottom ambiance."
-    },
-    {
-      "type": 0,
-      "id": "1262491690900656259",
-      "sku_id": "1262491690900656258",
-      "asset": "a_4db5b8518672197225c69fe72f07a945",
-      "label": "Gary the Snail stretches his long eyes to take a quick peek outside from SpongeBob's window."
-    },
-    {
-      "type": 0,
-      "id": "1262491690900656262",
-      "sku_id": "1262491690900656261",
-      "asset": "a_96e669a80b3a3e3d57035293750291ed",
-      "label": "The avatar dons Sandy Cheek's stylish underwater helmet, with air bubbles rising around it. Don't forget to refill the oxygen tank."
-    },
-    {
-      "type": 0,
-      "id": "1262491690900656265",
-      "sku_id": "1262491690900656264",
-      "asset": "a_2249f064370a3d5e9f0e7189099d521e",
-      "label": "The avatar, now blessed with the remarkable arms of MuscleBob BuffPants, flexes off its muscles and hard-earned gains."
     },
     {
       "type": 0,
@@ -2424,31 +1773,10 @@
     },
     {
       "type": 0,
-      "id": "1256321669467865089",
-      "sku_id": "1256321669467865088",
-      "asset": "a_1005898c6acf56a9ac5010baf444f6fd",
-      "label": "Wisps of luminous, ethereal embers swirl around the avatar. They make for a helpful lightsource for dark areas yet to be explored."
-    },
-    {
-      "type": 0,
       "id": "1256321669467865092",
       "sku_id": "1256321669467865091",
       "asset": "a_ef6fe8b27123eacccebe51c92a61587c",
       "label": "A cursed ring covered with shadowy roots and enveloped in flickering cursed flames. It may grant its wearer new powers, but at what cost?"
-    },
-    {
-      "type": 0,
-      "id": "1256321669467865095",
-      "sku_id": "1256321669467865094",
-      "asset": "a_ef8d97374ffdbf140df1164be6c69e46",
-      "label": "A circular sigil inscribed with mysterious symbols enframed around the avatar glows with a magical energy."
-    },
-    {
-      "type": 0,
-      "id": "1252404748397707324",
-      "sku_id": "1252404745977462836",
-      "asset": "a_48b8411feb1e80a69048fc65b3275b75",
-      "label": "Chillet embraces you with a frosty hug that nevertheless warms the heart."
     },
     {
       "type": 0,
@@ -2515,13 +1843,6 @@
     },
     {
       "type": 0,
-      "id": "1245087875209367623",
-      "sku_id": "1245087850177888356",
-      "asset": "a_8c17e799bfeffa797042569a1ebcafc0",
-      "label": "A circular pipe rapidly shoots out a cascade of colorful stars from one end to the other in an endless loop. Anyone who stares for too long may get starry-eyed."
-    },
-    {
-      "type": 0,
       "id": "1245087928992927764",
       "sku_id": "1245087912350187520",
       "asset": "a_fa253f928314c8eee54e913f90039eab",
@@ -2568,20 +1889,6 @@
       "sku_id": "1237650103980920872",
       "asset": "a_2d792aad5003faf6809e26879a7eae6b",
       "label": "A digital face in an electronic device sweats with nervousness."
-    },
-    {
-      "type": 0,
-      "id": "1237650202391744522",
-      "sku_id": "1237650179721527347",
-      "asset": "a_9d35467f282b8c72a26f5aa40aa2a637",
-      "label": "A digital face in an electronic device licks its lips."
-    },
-    {
-      "type": 0,
-      "id": "1237653984555044874",
-      "sku_id": "1237653964582031400",
-      "asset": "a_798a5bcbb11067e4d9ab339e51d2a16c",
-      "label": "Armed with two sharpened cutlasses and a pirate captain's hat, your avatar is ready to outwit, outmatch, and outsyle any scallywag who dares stand in your way."
     },
     {
       "type": 0,
@@ -2648,13 +1955,6 @@
     },
     {
       "type": 0,
-      "id": "1232071714909847682",
-      "sku_id": "1232071712695386162",
-      "asset": "a_8552f9857793aed0cf816f370e2df3be",
-      "label": "Star constellations decorate the avatar, inviting profile admirers for a fun session of stargazing."
-    },
-    {
-      "type": 0,
       "id": "1232072123950956635",
       "sku_id": "1232072121950146560",
       "asset": "a_9a6bf0ab30a6719d6eb09fa4996984ca",
@@ -2697,13 +1997,6 @@
     },
     {
       "type": 0,
-      "id": "1228251373158793251",
-      "sku_id": "1228251351415263242",
-      "asset": "a_f740031cc97d1b7eb73c0d0ac1dd09f3",
-      "label": "Stringlights and a lovely houseplant adorn the frame of the avatar for the ultimate cozy mood."
-    },
-    {
-      "type": 0,
       "id": "1228251862709567508",
       "sku_id": "1228251846032756796",
       "asset": "a_e8c11f139e55dac538cdaafb3caa2317",
@@ -2722,41 +2015,6 @@
       "sku_id": "1228252219502100530",
       "asset": "a_5873ecaa76fb549654b40095293f902e",
       "label": "A pen scribbles a cheeky smiley face on a small notebook next to a pair of earbuds."
-    },
-    {
-      "type": 0,
-      "id": "1220513979898793994",
-      "sku_id": "1220513977683935373",
-      "asset": "a_98555e40cc6802bd3a4fed906af1d992",
-      "label": "Clove's special smoke ability wraps around the avatar, with several fluttering, glowing butterflies."
-    },
-    {
-      "type": 0,
-      "id": "1220513996889919548",
-      "sku_id": "1220513995308400680",
-      "asset": "a_09de63526a45be1ddac70e84718ee04a",
-      "label": "A kill icon displaying 5 confirmed kills."
-    },
-    {
-      "type": 0,
-      "id": "1220513986051837952",
-      "sku_id": "1220513984273186816",
-      "asset": "a_c45abe8c7585fdb41b8d8d4d666f1588",
-      "label": "The avatar wears Omen's signature hood."
-    },
-    {
-      "type": 0,
-      "id": "1220513991449907280",
-      "sku_id": "1220513989729976411",
-      "asset": "a_a87e3efa4de2956331831681231ce63b",
-      "label": "Reyna's Leer ability surrounds the avatar, nearsighting all those who dare to stare into its gaze."
-    },
-    {
-      "type": 0,
-      "id": "1220514050551709787",
-      "sku_id": "1220514048068812901",
-      "asset": "a_904b1989077c91fca1168d39bfcaa0a4",
-      "label": "The avatar equips throwing knives from Jett's signature Blade Storm ability."
     },
     {
       "type": 0,
@@ -2795,24 +2053,10 @@
     },
     {
       "type": 0,
-      "id": "1217626041456001146",
-      "sku_id": "1217626024540508170",
-      "asset": "a_4cd9ae5a8d103c219eacd3674d7730cd",
-      "label": "Two butterflies flutter around the avatar, eager to adventure with you to the nearest garden."
-    },
-    {
-      "type": 0,
       "id": "1217626222851391529",
       "sku_id": "1217626219651006495",
       "asset": "a_ab95c78401ce4ec85c25a6d308db9d85",
       "label": "Three merry flowerheads are quite entertained by the gentle descent of petals around them."
-    },
-    {
-      "type": 0,
-      "id": "1212570367017885737",
-      "sku_id": "1212570343567261736",
-      "asset": "a_3e1fc3c7ee2e34e8176f4737427e8f4f",
-      "label": "Hearts and flowers decorate the avatar's frame for a lovely, charming vibe."
     },
     {
       "type": 0,
@@ -2858,62 +2102,6 @@
     },
     {
       "type": 0,
-      "id": "1207048659666079814",
-      "sku_id": "1207048656289534022",
-      "asset": "a_82e4df4028396ad5ccaaafb397fa6248",
-      "label": "Fire, rock, water, and electricity revolve around the avatar's frame."
-    },
-    {
-      "type": 0,
-      "id": "1202073087265476648",
-      "sku_id": "1202070083816661043",
-      "asset": "a_9d2ff9685be0c668ef6990b0035fac17",
-      "label": "A fan sits to the left of the avatar with plum blossoms. The fan expands for a moment, shielding the avatar from your gaze, before closing with an acrobatic movement."
-    },
-    {
-      "type": 0,
-      "id": "1202073907918798848",
-      "sku_id": "1202073882111266846",
-      "asset": "a_63b29ec5b1ea6bb01c2251049838d822",
-      "label": "From on top of the avatar, a tiled roof sits with lanterns swinging back and forth in the breeze."
-    },
-    {
-      "type": 0,
-      "id": "1202073807658164295",
-      "sku_id": "1202073775840178206",
-      "asset": "a_0f4f1b40921ce680b60007e94427d1f2",
-      "label": "A string of firecrackers appears to the left of the avatar, and after a moment, lights off with a flurry of sparks!"
-    },
-    {
-      "type": 0,
-      "id": "1202073979167461406",
-      "sku_id": "1202073975178665984",
-      "asset": "a_445566ed965b2c1632a5b45c92f32d11",
-      "label": "A dragon's mouth perches precariously around the avatar. In a swift movement, the dragon chomps down, smiling and revealing its face."
-    },
-    {
-      "type": 0,
-      "id": "1202445980377817179",
-      "sku_id": "1202445890909110323",
-      "asset": "a_1b1df0ae8c2d34afd85da5c22a0d761a",
-      "label": "Two red envelopes sit on the left side of the avatar. One envelope moves forward and opens up to ingest a number of gold coins."
-    },
-    {
-      "type": 0,
-      "id": "1202074104945971311",
-      "sku_id": "1202074101343322184",
-      "asset": "a_50b440810b1bbd89f6284f36d40ad0af",
-      "label": "Two koi fish swimming beneath the water covering the avatar surface, and dive down repeatedly as they swim in circles."
-    },
-    {
-      "type": 0,
-      "id": "1197344345783808161",
-      "sku_id": "1197344326133502032",
-      "asset": "a_e90ebc0114e7bdc30353c8b11953ea41",
-      "label": "Something disrupted the neurovisor connection. The signal appears as static over the avatar. Better call Repairs."
-    },
-    {
-      "type": 0,
       "id": "1197344345783808161",
       "sku_id": "1197344326133502032",
       "asset": "a_e90ebc0114e7bdc30353c8b11953ea41",
@@ -2946,13 +2134,6 @@
       "sku_id": "1179493515038818329",
       "asset": "a_e11ac0d3f2b1301173847b84a1a3268f",
       "label": "Beamchop, a horned monster, musters its might to fire a powerful laser from its horn. That looks like it hurts!"
-    },
-    {
-      "type": 0,
-      "id": "1179493515076579376",
-      "sku_id": "1179493515076579375",
-      "asset": "a_ea8e2e628bacdddb1ef18cb382aa454c",
-      "label": "A strange humanoid-looking creature farts, then smells its own stinky fumes. Guess that's why its earned the name Stinkums..."
     },
     {
       "type": 0,
@@ -3019,13 +2200,6 @@
     },
     {
       "type": 0,
-      "id": "1174460802946834503",
-      "sku_id": "1174460780842856588",
-      "asset": "a_88f42fb7360d8224a670a50c3496f315",
-      "label": "Festive string lights wrap around the profile photo, twinkling into the night."
-    },
-    {
-      "type": 0,
       "id": "1157411984371880119",
       "sku_id": "1157411984371880118",
       "asset": "a_ad4e2cad924bbb3a2fddf5c527370479",
@@ -3054,94 +2228,10 @@
     },
     {
       "type": 0,
-      "id": "1157409074422481024",
-      "sku_id": "1157409074422481023",
-      "asset": "a_5087f7f988bd1b2819cac3e33d0150f5",
-      "label": "Chestnut autumn leaves and acorns decorate the avatar. You can practically smell the acorns dangling above. Fall is here."
-    },
-    {
-      "type": 0,
-      "id": "1157409869448618017",
-      "sku_id": "1157409869448618016",
-      "asset": "a_145dffeb81bcfff96be683fd9f6db20a",
-      "label": "Orange pumpkins growing from a vine can only mean one thing... the flavor of fall - pumpkin spice - has arrived!"
-    },
-    {
-      "type": 0,
-      "id": "1157457289872146472",
-      "sku_id": "1157407831348228139",
-      "asset": "a_4936aa6c33a101b593f9607d48d686ec",
-      "label": "Mushrooms are growing underneath a cute green hat that looks suspiciously like a live, smiling frog."
-    },
-    {
-      "type": 0,
       "id": "1157409074422481021",
       "sku_id": "1157407831348228141",
       "asset": "a_7d305bca6cf371df98c059f9d2ef05e4",
       "label": "The avatar wears a cute, orange fox hat! Wait... did the hat just blink?!"
-    },
-    {
-      "type": 0,
-      "id": "1144046002110738635",
-      "sku_id": "1144046002110738634",
-      "asset": "a_fe3c76cac2adf426832a7e495e8329d3",
-      "label": "Three Fairy Sprites, Floating and Shining, Yellow, Animated"
-    },
-    {
-      "type": 0,
-      "id": "1144005849740742707",
-      "sku_id": "1144003752978829455",
-      "asset": "a_0f5d6c4dd8ae74662ee9c40722a56cbd",
-      "label": "Curved Sword with Pink Gem Engraved in Hilt, Alight with Orange Flames, Animated"
-    },
-    {
-      "type": 0,
-      "id": "1144007738859470929",
-      "sku_id": "1144006094134456352",
-      "asset": "a_1dbc603c181999b9815cb426dfec71a6",
-      "label": "Round Glass Bottle with Cork, Bursting with Purple Potion, Animated"
-    },
-    {
-      "type": 0,
-      "id": "1144046002110738635",
-      "sku_id": "1144046002110738634",
-      "asset": "a_fe3c76cac2adf426832a7e495e8329d3",
-      "label": "Three Fairy Sprites, Floating and Shining, Yellow, Animated"
-    },
-    {
-      "type": 0,
-      "id": "1144048390594908213",
-      "sku_id": "1144048390594908212",
-      "asset": "a_db9baf0ba7cf449d2b027c06309dbe8d",
-      "label": "Wizard's Staff with Green Gem, Summoning a Branch of Green Crystals, Animated"
-    },
-    {
-      "type": 0,
-      "id": "1144048977138946231",
-      "sku_id": "1144048977138946230",
-      "asset": "a_d650e22f6c4bab4fc0969e9d35edbcb0",
-      "label": "Circle of Blue Rune Stones, Glowing and Pulsing, Animated"
-    },
-    {
-      "type": 0,
-      "id": "1144049316009353339",
-      "sku_id": "1144049316009353338",
-      "asset": "a_29a0533cb3de61aa8179810188f3830d",
-      "label": "Shield with Blue Gem Below a Branch of Green Leaves, Resting Against a Stone, Catching Arrows, Animated"
-    },
-    {
-      "type": 0,
-      "id": "1144049603109470371",
-      "sku_id": "1144049603109470370",
-      "asset": "a_9d67a1cbf81fe7197c871e94f619b04b",
-      "label": "Skull Medallion Hanging from Pink Band, Rotating and Activating with Energy, Animated"
-    },
-    {
-      "type": 0,
-      "id": "1144049924397334652",
-      "sku_id": "1144049924397334651",
-      "asset": "a_4c9f2ec29c05755456dbce45d8190ed4",
-      "label": "Gold Key with Red Gem, Unlocking a Treasure Chest Filled with Gold Coins, Animated"
     },
     {
       "type": 0,
@@ -3191,27 +2281,6 @@
       "sku_id": "1144308439720394944",
       "asset": "a_3c97a2d37f433a7913a1c7b7a735d000",
       "label": "Anger Symbol with Exclamation Mark Speech Bubble, Anime-Style, Red, Animated"
-    },
-    {
-      "type": 0,
-      "id": "1184292703937253386",
-      "sku_id": "1144056139584127058",
-      "asset": "a_21c7a425b490017478a5558f33f33c63",
-      "label": "Toast Being Eaten, Animated"
-    },
-    {
-      "type": 0,
-      "id": "1144056631374647459",
-      "sku_id": "1144056631374647458",
-      "asset": "a_aa2e1c2b3cf05b24f6ec7b8b4141f5fc",
-      "label": "Coffee with Milk Steaming from Blue Mug with Smiley Face, Animated"
-    },
-    {
-      "type": 0,
-      "id": "1144057023726628946",
-      "sku_id": "1144057023726628945",
-      "asset": "a_9b7b74e72efe1bc5a6beddced3da3c0f",
-      "label": "Runny Egg Yolk, Animated"
     },
     {
       "type": 0,

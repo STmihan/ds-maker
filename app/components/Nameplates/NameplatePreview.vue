@@ -7,7 +7,7 @@
       <div class="status"></div>
     </div>
     <div class="user">
-      <Nameplate :nameplate="profile.nameplate" class="nameplate"/>
+      <NameplateView :nameplate="profile.nameplate" class="nameplate"/>
       <div class="avatar">
         <img :src="profile.avatar" alt="Avatar"/>
       </div>
@@ -26,7 +26,7 @@
 
 <script setup lang="ts">
 import type {Profile} from "~/types/profile";
-import Nameplate from "~/components/Nameplate.vue";
+import NameplateView from "~/components/Nameplates/NameplateView.vue";
 
 const {profile} = defineProps<{
   profile: Profile
@@ -77,10 +77,6 @@ const {profile} = defineProps<{
   margin-left: 60px;
   margin-top: 15px;
   color: #e5e3e3;
-}
-
-.name.name-1 {
-  width: 100px;
 }
 
 .name.null {

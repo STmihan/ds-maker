@@ -2,11 +2,11 @@
   <main>
     <div class="container">
       <div class="left">
-        <SmallProfile :profile="profile" />
-        <NameplateProfile :profile="profile"/>
+        <ProfilePreview :profile="profile" />
+        <NameplatePreview :profile="profile"/>
       </div>
       <div class="right">
-        <ProfilePanel
+        <ProfileEditor
           :profile="profile"
           :avatar-decorations="avatarDecorations"
           :profile-effects="profileEffects"
@@ -19,10 +19,10 @@
 
 <script setup lang="ts">
 
-import SmallProfile from "~/components/SmallProfile.vue";
+import ProfilePreview from "~/components/ProfilePreview/ProfilePreview.vue";
 import type {Profile} from "~/types/profile";
-import NameplateProfile from "~/components/NameplateProfile.vue";
-import ProfilePanel from "~/components/ProfilePanel.vue";
+import NameplatePreview from "~/components/Nameplates/NameplatePreview.vue";
+import ProfileEditor from "~/components/ProfileEditor/ProfileEditor.vue";
 import avatarDecorationConfigs from "~/assets/avatar-decorations.json";
 import profileEffectConfigs from "~/assets/profile-effects.json";
 import nameplateConfigs from "~/assets/nameplates.json";
