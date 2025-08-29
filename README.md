@@ -1,75 +1,32 @@
-# Nuxt Minimal Starter
+# DS Maker
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+DS Maker is a web application for visualizing and customizing Discord-style user profiles. You can edit your avatar,
+banner, decorations, nameplates, and effects, preview your profile in real time, and share your configuration with
+others. This project is not affiliated with Discord Inc. All trademarks belong to their respective owners.
 
-## Setup
+## Features
 
-Make sure to install dependencies:
+- Edit and preview Discord-like user profiles
+- Upload custom avatar and banner images
+- Choose decorations, nameplates, and profile effects
+- Share your profile configuration via URL
+- Responsive and mobile-friendly UI
 
-```bash
-# npm
-npm install
+## Development
 
-# pnpm
-pnpm install
+### Requirements
 
-# yarn
-yarn install
+- Node.js v18 or newer
+- Yarn v1.22 or newer
 
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+### Build for development
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+yarn install # Install dependencies
+yarn dev   # Start the development server
 ```
+The app will be available at http://localhost:3000
 
-## Production
+## License
 
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+This project is open source and licensed under the MIT License.

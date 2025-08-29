@@ -15,10 +15,12 @@
         <button class="share-btn" @click="shareProfile">Share</button>
       </div>
     </div>
+    <Footer/>
   </main>
 </template>
 
 <script setup lang="ts">
+import {ref} from 'vue';
 import {onMounted} from 'vue';
 
 import ProfilePreview from "~/components/ProfilePreview/ProfilePreview.vue";
@@ -32,6 +34,7 @@ import type {AvatarDecoration} from "~/types/avatarDecoration";
 import type {ProfileEffect} from "~/types/profileEffect";
 import type {Nameplate} from "~/types/nameplate";
 import defaultProfile from "~/defaultProfile";
+import Footer from "~/components/Footer.vue";
 
 const avatarDecorations = avatarDecorationConfigs.avatar_decoration_configs as AvatarDecoration[];
 const profileEffects = profileEffectConfigs.profile_effect_configs as ProfileEffect[];
