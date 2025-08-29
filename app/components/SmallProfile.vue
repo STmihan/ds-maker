@@ -1,13 +1,11 @@
 ﻿<template>
   <div class="profile" :style="profileThemeStyles">
     <div v-if="profile.profileEffect" class="profile-effect-container">
-      <img
-          v-for="(layer, index) in profile.profileEffect"
-          :key="index"
-          :src="layer"
-          alt="Profile Effect Layer"
-          class="profile-effect-layer"
-      />
+      <ProfileEffectLayer v-for="(layer, index) in profile.profileEffect.effects"
+                          :key="index"
+                          :effect="layer"
+                          :force-reduced-motion="false"
+                          :randomize="true"/>
     </div>
     <div class="profile-popout">
 
@@ -15,7 +13,9 @@
         <div class="banner" :style="{ backgroundImage: `url(${profile.profileBanner})` }"></div>
         <div class="avatar-wrapper">
           <img :src="profile.avatar" alt="Avatar" class="avatar-img"/>
-          <img v-if="profile.avatarDecoration" :src="profile.avatarDecoration" alt="Avatar Decoration"
+          <img v-if="profile.avatarDecoration"
+               :src="avatarDecorationUrl"
+               alt="Avatar Decoration"
                class="avatar-decoration"/>
         </div>
       </header>
@@ -27,14 +27,12 @@
             <span class="username">{{ profile.username }}</span>
             <span class="username-dot">•</span>
             <span v-if="profile.pronouns" class="pronouns">{{ profile.pronouns }}</span>
-            <div v-if="profile.serverTagName" class="server-tag">
-              <img :src="profile.serverTagBadge" alt="Server Badge" class="server-tag-badge"/>
-              <span class="server-tag-name">{{ profile.serverTagName }}</span>
+            <div v-if="profile.serverTag" class="server-tag">
+              <img :src="profile.serverTag?.badgeSrc" alt="Server Badge" class="server-tag-badge"/>
+              <span class="server-tag-name">{{ profile.serverTag?.name }}</span>
             </div>
           </div>
         </div>
-
-
         <div class="divider"></div>
 
         <div class="about-me">
@@ -69,6 +67,15 @@ const profileThemeStyles = computed(() => ({
   '--profile-text': isColorLight(profile.profileThemePrimary) ? '#393030' : '#e5e3e3',
   '--profile-text-muted': isColorLight(profile.profileThemePrimary) ? '#716663' : '#d9d4d2',
 }));
+
+const avatarDecorationUrl = computed(() => {
+  if (profile.avatarDecoration) {
+    return `https://cdn.discordapp.com/avatar-decoration-presets/${profile.avatarDecoration.asset}.png?size=160`
+  } else {
+    return ''
+  }
+})
+
 </script>
 
 <style scoped>
@@ -98,13 +105,6 @@ const profileThemeStyles = computed(() => ({
   width: 100%;
   z-index: 3;
   pointer-events: none;
-}
-
-.profile-effect-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
 }
 
 .profile-header {

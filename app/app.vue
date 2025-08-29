@@ -11,11 +11,22 @@
       <div class="right">
         <div class="panel">
           <h2>Profile Information</h2>
+          <strong>Avatar Decorations:</strong>
+          <select v-model="selectedAvatarDecoration">
+            <option v-for="item in avatarDecorations" :key="item.id" :value="item">
+              {{ item.label }}
+            </option>
+          </select>
+          <strong>Profile Effects:</strong>
+          <select v-model="selectedProfileEffect">
+            <option v-for="item in profileEffects" :key="item.id" :value="item">
+              {{ item.title }}
+            </option>
+          </select>
           <p><strong>Username:</strong> {{ profile.username }}</p>
           <p><strong>Display Name:</strong> {{ profile.displayName }}</p>
           <p><strong>Pronouns:</strong> {{ profile.pronouns }}</p>
           <p><strong>About Me:</strong> {{ profile.aboutMe }}</p>
-          <p><strong>Server Tag:</strong> {{ profile.serverTagName }}</p>
         </div>
       </div>
     </div>
@@ -23,29 +34,63 @@
 </template>
 
 <script setup lang="ts">
-import SmallProfile from "~/components/smallProfile.vue";
+import SmallProfile from "~/components/SmallProfile.vue";
 import type {Profile} from "~/types/profile";
-import NameplateProfile from "~/components/nameplateProfile.vue";
+import NameplateProfile from "~/components/NameplateProfile.vue";
+import avatarDecorationConfigs from "~/assets/avatar-decorations.json"
+import profileEffectConfigs from "~/assets/profile-effects.json"
+import nameplateConfigs from "~/assets/nameplates.json"
+import type {AvatarDecoration} from "~/types/avatarDecoration";
+import type {ProfileEffect} from "~/types/profileEffect";
+import type {Nameplate} from "~/types/nameplate";
 
-const profile: Profile = {
+const avatarDecorations = avatarDecorationConfigs.avatar_decoration_configs as AvatarDecoration[];
+const profileEffects = profileEffectConfigs.profile_effect_configs as ProfileEffect[];
+const nameplates = nameplateConfigs.nameplate_configs as Nameplate[];
+
+const selectedAvatarDecoration = ref<AvatarDecoration | null>(avatarDecorations[0] ?? null)
+const selectedProfileEffect = ref<ProfileEffect | null>(profileEffects[0] ?? null)
+const selectedNameplate = ref<Nameplate | null>({
+  id: "1394404301337792532",
+  sku_id: "1394404301295714355",
+  asset: "nameplates/petal/spirit_blossom_petals/",
+  label: "A pink and purple gradient background with floating petals surrounded by an ethereal aura.",
+  palette: "violet"
+})
+
+const profile = ref<Profile>({
   username: "stmihan",
   displayName: "| STmihan |",
   pronouns: ':c',
-  avatar: "https://cdn.discordapp.com/avatars/284032425519087626/a_20e32f679e2b5aa69c19d87362601b6f.webp?size=128&animated=true",
-  avatarDecoration: "https://cdn.discordapp.com/avatar-decoration-presets/a_27f77b8147892bc271658ba19e4ecc06.png?size=160",
-  profileBanner: "https://cdn.discordapp.com/banners/284032425519087626/a_3d2039ae5d431b94dae294a35dbb3671.webp?size=300&animated=true",
-  profileEffect: [
-    'https://cdn.discordapp.com/assets/profile_effects/effects/2024-09-09/fall-foliage/loop.png',
-    'https://cdn.discordapp.com/assets/profile_effects/effects/2024-10-04/fall-foliage/intro-leaves.png',
-    'https://cdn.discordapp.com/assets/profile_effects/effects/2024-09-09/fall-foliage/intro-branch.png'
-  ],
+  aboutMe: "⠠⠀⠀⠀⠰⢀⡀⠀⡤⠏⠀⠸⠈⠐⠀⠊⡸⡀⠈⠗⠈⣠⠍⠀",
+
+  serverTag: {
+    name: "DM",
+    badgeSrc: "https://cdn.discordapp.com/clan-badges/269765356661374976/ad842b5ea717cde056d0093cb9e90d1d.png?size=16",
+  },
+
   profileThemePrimary: "#150d0d",
   profileThemeAccent: "#552609",
-  aboutMe: "⠠⠀⠀⠀⠰⢀⡀⠀⡤⠏⠀⠸⠈⠐⠀⠊⡸⡀⠈⠗⠈⣠⠍⠀",
-  serverTagBadge: "https://cdn.discordapp.com/clan-badges/269765356661374976/ad842b5ea717cde056d0093cb9e90d1d.png?size=16",
-  serverTagName: "DM",
-  nameplate: "https://cdn.discordapp.com/assets/collectibles/nameplates/petal/spirit_blossom_petals/asset.webm",
-};
+
+  avatar: "https://cdn.discordapp.com/avatars/284032425519087626/a_20e32f679e2b5aa69c19d87362601b6f.webp?size=128&animated=true",
+  profileBanner: "https://cdn.discordapp.com/banners/284032425519087626/a_3d2039ae5d431b94dae294a35dbb3671.webp?size=300&animated=true",
+  
+  nameplate: selectedNameplate.value,
+  avatarDecoration: selectedAvatarDecoration.value,
+  profileEffect: selectedProfileEffect.value,
+});
+
+watch(selectedAvatarDecoration, (val) => {
+  profile.value.avatarDecoration = val;
+})
+
+watch(selectedProfileEffect, (val) => {
+  profile.value.profileEffect = val
+})
+
+watch(selectedNameplate, (val) => {
+  profile.value.nameplate = val
+})
 
 </script>
 
@@ -64,6 +109,13 @@ main {
   flex-direction: column;
   align-items: center;
   height: 100vh;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 12px;
 }
 
 .container {
@@ -89,6 +141,7 @@ main {
     flex-direction: column;
     align-items: center;
   }
+
   .left, .right {
     width: 100%;
     align-items: center;

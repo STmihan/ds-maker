@@ -1,21 +1,24 @@
-﻿export interface Profile {
+﻿import type {AvatarDecoration} from "~/types/avatarDecoration";
+import type {ProfileEffect} from "~/types/profileEffect";
+import type {Nameplate} from "~/types/nameplate";
+import type {ServerTag} from "~/types/serverTag";
+
+export interface Profile {
     username: string;
     displayName: string;
     pronouns: string;
     
     avatar: string;
-    avatarDecoration: string;
-    
     profileBanner: string;
-    profileEffect: string[];
     
     profileThemePrimary: string;
     profileThemeAccent: string;
     
     aboutMe: string;
     
-    serverTagBadge: string;
-    serverTagName: string;
+    serverTag: ServerTag | null;
     
-    nameplate: string;
+    avatarDecoration: AvatarDecoration | null;
+    profileEffect: ProfileEffect | null;
+    nameplate: Nameplate | null;
 }

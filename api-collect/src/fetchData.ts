@@ -19,3 +19,37 @@ export async function fetchProfileEffects() {
     const response = await axios.get(url, {headers});
     return response.data;
 }
+
+export async function fetchNameplates(categories: any[]) {
+    const nameplates = [];
+    const nameplatePalettes = [];
+    for (let category of categories) {
+        for (const product of category.products) {
+            for (const item of product.items) {
+                if (item.type === 2) {
+                    nameplates.push(item);
+                    nameplatePalettes.push(item.palette);
+                }
+            }
+        }
+    }
+
+    return {"nameplate_configs": nameplates, palettes: [...new Set(nameplatePalettes)] };
+}
+
+
+export async function fetchAvatarDecorations(categories: any[]) {
+    const avatarDecorations = [];
+    for (let category of categories) {
+        for (const product of category.products) {
+            for (const item of product.items) {
+                if (item.type === 0) {
+                    avatarDecorations.push(item);
+                }
+            }
+        }
+    }
+
+    return {"avatar_decoration_configs": avatarDecorations};
+}
+

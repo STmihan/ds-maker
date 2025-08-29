@@ -1,37 +1,54 @@
 ﻿<template>
-<div class="panel">
-  <div class="user">
-    <div class="avatar"></div>
-    <div class="name name-2 null"></div>
-    <div class="status-bg"></div>
-    <div class="status"></div>
-  </div>
-  <div class="user">
-    <div class="nameplate">
-      <video :src="profile.nameplate" autoplay muted loop />
+  <div class="panel">
+    <div class="user">
+      <div class="avatar"></div>
+      <div class="name name-2 null"></div>
+      <div class="status-bg"></div>
+      <div class="status"></div>
     </div>
-    <div class="avatar">
-      <img :src="profile.avatar" alt="Avatar" />
+    <div class="user">
+      <div class="nameplate" :style="nameplatePalette">
+        <video :src="nameplateUrl" autoplay muted loop/>
+      </div>
+      <div class="avatar">
+        <img :src="profile.avatar" alt="Avatar"/>
+      </div>
+      <div class="name display-name">
+        {{ profile.displayName }}
+      </div>
     </div>
-    <div class="name display-name">
-      {{profile.displayName}}
+    <div class="user">
+      <div class="avatar"></div>
+      <div class="name name-2 null"></div>
+      <div class="status-bg"></div>
+      <div class="status"></div>
     </div>
   </div>
-  <div class="user">
-    <div class="avatar"></div>
-    <div class="name name-2 null"></div>
-    <div class="status-bg"></div>
-    <div class="status"></div>
-  </div>
-</div>
 </template>
 
 <script setup lang="ts">
 import type {Profile} from "~/types/profile";
+import {nameplatePaletteMap} from "~/types/nameplate";
 
 const {profile} = defineProps<{
   profile: Profile
 }>();
+
+const nameplateUrl = computed(() => {
+  // https://cdn.discordapp.com/assets/collectibles/nameplates/petal/spirit_blossom_petals/asset.webm
+  if (profile.nameplate) {
+    return `https://cdn.discordapp.com/assets/collectibles/${profile.nameplate.asset}asset.webm`
+  } else {
+    return ''
+  }
+})
+
+const nameplatePalette = computed(() => {
+  return {
+    backgroundImage: nameplatePaletteMap[profile.nameplate?.palette || 'default'],
+  };
+})
+
 </script>
 
 <style scoped>
@@ -117,7 +134,6 @@ const {profile} = defineProps<{
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  background-image: linear-gradient(90deg, #00000000 -30%, #730BC8 200%);
 }
 
 .nameplate video {

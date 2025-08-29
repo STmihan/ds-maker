@@ -1,0 +1,320 @@
+{
+  "nameplate_configs": [
+    {
+      "type": 2,
+      "id": "1400163655416283236",
+      "sku_id": "1400163655399641249",
+      "asset": "nameplates/rock/gomah/",
+      "label": "Gomah in action pose ready to strike.",
+      "palette": "crimson"
+    },
+    {
+      "type": 2,
+      "id": "1400163655445643415",
+      "sku_id": "1400163655424933978",
+      "asset": "nameplates/rock/mini_vegeta/",
+      "label": "Mini Vegeta in Super Saiyan form with blazing yellow aura.",
+      "palette": "cobalt"
+    },
+    {
+      "type": 2,
+      "id": "1400163655479197696",
+      "sku_id": "1400163655462555658",
+      "asset": "nameplates/rock/mini_goku/",
+      "label": "Mini Goku in Super Saiyan form radiating golden energy.",
+      "palette": "berry"
+    },
+    {
+      "type": 2,
+      "id": "1400163655512752128",
+      "sku_id": "1400163655487848501",
+      "asset": "nameplates/rock/dragon_ball/",
+      "label": "A glowing Dragon Ball hovers the nameplate.",
+      "palette": "crimson"
+    },
+    {
+      "type": 2,
+      "id": "1394404301337792532",
+      "sku_id": "1394404301295714355",
+      "asset": "nameplates/petal/spirit_blossom_petals/",
+      "label": "A pink and purple gradient background with floating petals surrounded by an ethereal aura.",
+      "palette": "violet"
+    },
+    {
+      "type": 2,
+      "id": "1394404301383930027",
+      "sku_id": "1394404301354434671",
+      "asset": "nameplates/petal/yunaras_aion_erna/",
+      "label": "A blue aura dragon spirit enveloped in swirling purple spiritual flames with ethereal wisps dancing around it.",
+      "palette": "cobalt"
+    },
+    {
+      "type": 2,
+      "id": "1394404301409095922",
+      "sku_id": "1394404301396377710",
+      "asset": "nameplates/petal/spirit_blossom_springs/",
+      "label": "Glowing green spirit orbs floating mysteriously above misty waters with supernatural light patterns.",
+      "palette": "teal"
+    },
+    {
+      "type": 2,
+      "id": "1387888352702894140",
+      "sku_id": "1387888352686112819",
+      "asset": "nameplates/paper/skibidi_toilet/",
+      "label": "",
+      "palette": "lemon"
+    },
+    {
+      "type": 2,
+      "id": "1387888352728059914",
+      "sku_id": "1387888352711278602",
+      "asset": "nameplates/paper/tv_woman/",
+      "label": "",
+      "palette": "violet"
+    },
+    {
+      "type": 2,
+      "id": "1387888352749031617",
+      "sku_id": "1387888352736313414",
+      "asset": "nameplates/paper/secret_agent/",
+      "label": "",
+      "palette": "forest"
+    },
+    {
+      "type": 2,
+      "id": "1385035256075124898",
+      "sku_id": "1385035256058482798",
+      "asset": "nameplates/chance/red_dragon/",
+      "label": "",
+      "palette": "crimson"
+    },
+    {
+      "type": 2,
+      "id": "1385035256096096398",
+      "sku_id": "1385035256083648542",
+      "asset": "nameplates/chance/d20_roll/",
+      "label": "",
+      "palette": "berry"
+    },
+    {
+      "type": 2,
+      "id": "1385035256117067889",
+      "sku_id": "1385035256104620154",
+      "asset": "nameplates/chance/owlbear_cub/",
+      "label": "",
+      "palette": "bubble_gum"
+    },
+    {
+      "type": 2,
+      "id": "1382845914216927252",
+      "sku_id": "1382845914192023632",
+      "asset": "nameplates/nameplates_v3/aurora/",
+      "label": "Teal-green background with shimmering aurora borealis light effects.",
+      "palette": "teal"
+    },
+    {
+      "type": 2,
+      "id": "1382845914237898802",
+      "sku_id": "1382845914225442886",
+      "asset": "nameplates/nameplates_v3/bonsai/",
+      "label": "Purple background with delicate cherry blossom tree and falling pink petals.",
+      "palette": "bubble_gum"
+    },
+    {
+      "type": 2,
+      "id": "1382845914258870404",
+      "sku_id": "1382845914246549535",
+      "asset": "nameplates/nameplates_v3/under_the_sea/",
+      "label": "Blue underwater background with coral reef and swimming fish.",
+      "palette": "sky"
+    },
+    {
+      "type": 2,
+      "id": "1382845914284036127",
+      "sku_id": "1382845914267521117",
+      "asset": "nameplates/nameplates_v3/sun_and_moon/",
+      "label": "Gradient background transitioning from sunny day to starry night sky.",
+      "palette": "cobalt"
+    },
+    {
+      "type": 2,
+      "id": "1382845914309201960",
+      "sku_id": "1382845914292686929",
+      "asset": "nameplates/nameplates_v3/oasis/",
+      "label": "Desert night background with palm trees and mystical purple starlight.",
+      "palette": "berry"
+    },
+    {
+      "type": 2,
+      "id": "1382845914334367937",
+      "sku_id": "1382845914317852693",
+      "asset": "nameplates/nameplates_v3/touch_grass/",
+      "label": "Natural green grass with a cat kneading it into place.",
+      "palette": "sky"
+    },
+    {
+      "type": 2,
+      "id": "1379220459215913050",
+      "sku_id": "1379220459203072050",
+      "asset": "nameplates/spell/white_mana/",
+      "label": "A gilded frame glows with the White Mana symbol as angelic wings and sunbeams illuminate your avatar.",
+      "palette": "bubble_gum"
+    },
+    {
+      "type": 2,
+      "id": "1379220459236884591",
+      "sku_id": "1379220459224043560",
+      "asset": "nameplates/spell/blue_mana/",
+      "label": "The Blue Mana symbol embedded in your avatar glows with power as it summons swirls of arcane energy.",
+      "palette": "cobalt"
+    },
+    {
+      "type": 2,
+      "id": "1379220459257856081",
+      "sku_id": "1379220459245015123",
+      "asset": "nameplates/spell/black_mana/",
+      "label": "Purple flames and skeletal hands grasp your Black Mana-framed avatar, emitting necrotic energy.",
+      "palette": "violet"
+    },
+    {
+      "type": 2,
+      "id": "1379220459283021824",
+      "sku_id": "1379220459265986670",
+      "asset": "nameplates/spell/red_mana/",
+      "label": "Dragon wings and red lightning erupt from your avatar's Red Mana symbol.",
+      "palette": "crimson"
+    },
+    {
+      "type": 2,
+      "id": "1379220459303993387",
+      "sku_id": "1379220459286958180",
+      "asset": "nameplates/spell/green_mana/",
+      "label": "Rampant vines grow and frame your avatar, emanating from your powerful Green Mana symbol.",
+      "palette": "clover"
+    },
+    {
+      "type": 2,
+      "id": "1377377712049754242",
+      "sku_id": "1377377712028516443",
+      "asset": "nameplates/nameplates_v2/spirit_moon/",
+      "label": "Purple night sky background with crescent moon, twinkling stars, and eclipse animation covering the moon.",
+      "palette": "violet"
+    },
+    {
+      "type": 2,
+      "id": "1377377712074784909",
+      "sku_id": "1377377712062074880",
+      "asset": "nameplates/nameplates_v2/pixie_dust/",
+      "label": "Warm pink-purple background with sparkling magical dust particles floating.",
+      "palette": "bubble_gum"
+    },
+    {
+      "type": 2,
+      "id": "1377377712095891526",
+      "sku_id": "1377377712078848180",
+      "asset": "nameplates/nameplates_v2/glitch/",
+      "label": "Digital blue-purple background with pixelated glitch effects and data corruption visuals.",
+      "palette": "violet"
+    },
+    {
+      "type": 2,
+      "id": "1377377712121057410",
+      "sku_id": "1377377712104018071",
+      "asset": "nameplates/nameplates_v2/starfall_tides/",
+      "label": "Ocean blue background with shooting stars washed up onto shore.",
+      "palette": "teal"
+    },
+    {
+      "type": 2,
+      "id": "1377377712150417438",
+      "sku_id": "1377377712129179840",
+      "asset": "nameplates/nameplates_v2/cozy_cat/",
+      "label": "Warm orange-brown background with sleeping cat curled up peacefully.",
+      "palette": "berry"
+    },
+    {
+      "type": 2,
+      "id": "1377377712179642458",
+      "sku_id": "1377377712162738196",
+      "asset": "nameplates/nameplates_v2/sword_of_legend/",
+      "label": "Dark blue background with glowing legendary sword and mystical light effects.",
+      "palette": "cobalt"
+    },
+    {
+      "type": 2,
+      "id": "1349849614135853087",
+      "sku_id": "1349849614102036581",
+      "asset": "nameplates/nameplates/cherry_blossoms/",
+      "label": "Pink cherry blossom flowers scatter.",
+      "palette": "berry"
+    },
+    {
+      "type": 2,
+      "id": "1349849614161019002",
+      "sku_id": "1349849614143979540",
+      "asset": "nameplates/nameplates/cat_beans/",
+      "label": "Orange cat and grey cat giving each other a high five.",
+      "palette": "violet"
+    },
+    {
+      "type": 2,
+      "id": "1349849614194573312",
+      "sku_id": "1349849614173339688",
+      "asset": "nameplates/nameplates/spirit_of_spring/",
+      "label": "Spring flowers sway in the green grass.",
+      "palette": "sky"
+    },
+    {
+      "type": 2,
+      "id": "1349849614219739227",
+      "sku_id": "1349849614198505602",
+      "asset": "nameplates/nameplates/twilight/",
+      "label": "Deep blue starry night sky gradient with twinkling stars.",
+      "palette": "cobalt"
+    },
+    {
+      "type": 2,
+      "id": "1349849614249099335",
+      "sku_id": "1349849614227865711",
+      "asset": "nameplates/nameplates/koi_pond/",
+      "label": "An orange and a red koi fish swim together in a pond.",
+      "palette": "sky"
+    },
+    {
+      "type": 2,
+      "id": "1349849614274265180",
+      "sku_id": "1349849614257225760",
+      "asset": "nameplates/nameplates/vengeance/",
+      "label": "Hot pink flames perpetually burning.",
+      "palette": "violet"
+    },
+    {
+      "type": 2,
+      "id": "1349849614303625308",
+      "sku_id": "1349849614286585866",
+      "asset": "nameplates/nameplates/cityscape/",
+      "label": "Purple skies with busy nightlife twinkling in the night.",
+      "palette": "violet"
+    },
+    {
+      "type": 2,
+      "id": "1349849614337179778",
+      "sku_id": "1349849614311751731",
+      "asset": "nameplates/nameplates/angels/",
+      "label": "Red hearts flying and twinkling away.",
+      "palette": "bubble_gum"
+    }
+  ],
+  "palettes": [
+    "crimson",
+    "cobalt",
+    "berry",
+    "violet",
+    "teal",
+    "lemon",
+    "forest",
+    "bubble_gum",
+    "sky",
+    "clover"
+  ]
+}

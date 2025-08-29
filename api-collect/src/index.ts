@@ -1,5 +1,5 @@
 import fs from 'fs';
-import {fetchCollectiblesCategories, fetchProfileEffects} from "./fetchData";
+import {fetchAvatarDecorations, fetchCollectiblesCategories, fetchNameplates, fetchProfileEffects} from "./fetchData";
 
 
 async function main() {
@@ -9,6 +9,12 @@ async function main() {
 
         const profileEffects = await fetchProfileEffects();
         fs.writeFileSync('../app/assets/profile-effects.json', JSON.stringify(profileEffects, null, 2), 'utf8');
+        
+        const avatarDecorations = await fetchAvatarDecorations(categories);
+        fs.writeFileSync('../app/assets/avatar-decorations.json', JSON.stringify(avatarDecorations, null, 2), 'utf8');
+        
+        const nameplates = await fetchNameplates(categories);
+        fs.writeFileSync('../app/assets/nameplates.json', JSON.stringify(nameplates, null, 2), 'utf8');
     } catch (e) {
         console.error("An error occurred while fetching data:", e.message);
         return;
