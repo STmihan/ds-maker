@@ -1,10 +1,16 @@
 <template>
   <ProfileModal v-if="show" @close="close">
     <h2>{{ title }}</h2>
-    <div class="items-list">
+    <div class="items-list" :class="{ 'nameplate-list': isNameplate }">
       <div v-for="item in items" :key="item.id" class="item-preview" :class="{selected: isSelected(item)}" @click="select(item)">
-        <img v-if="item.thumbnailPreviewSrc || item.thumbnail" :src="item.thumbnailPreviewSrc || item.thumbnail" class="preview-img"/>
-        <span>{{ item.label || item.title }}</span>
+        <div v-if="isNameplate" class="nameplate-container">
+          <Nameplate :nameplate="item" />
+        </div>
+        <template v-else>
+          <img v-if="item.thumbnailPreviewSrc || item.thumbnail" :src="item.thumbnailPreviewSrc || item.thumbnail" class="preview-img"/>
+        </template>
+        <span v-if="item.thumbnailPreviewSrc || item.thumbnail || item.isNameplate" class="item-label-img"></span>
+        <span v-else>{{ item.label || item.title }}</span>
       </div>
     </div>
     <div class="actions">
@@ -21,8 +27,9 @@ import ProfileModal from './ProfileModal.vue';
 const props = defineProps<{
   show: boolean,
   items: any[],
-  selectedId?: string,
-  title: string
+  selectedId: string | null,
+  title: string,
+  isNameplate?: boolean,
 }>();
 const emit = defineEmits(['close', 'select']);
 
@@ -49,25 +56,41 @@ function isSelected(item: any) {
 
 <style scoped>
 .items-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 12px;
   margin: 16px 0;
   max-height: 320px;
   overflow-y: auto;
+  width: 100%;
+  box-sizing: border-box;
 }
+.items-list.nameplate-list {
+  grid-template-columns: 1fr;
+}
+.items-list:not(.nameplate-list) {
+  grid-template-columns: repeat(auto-fit, minmax(92px, 1fr));
+}
+
 .item-preview {
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 2px solid transparent;
   border-radius: 8px;
-  padding: 8px 12px;
+  padding: 8px 4px 8px 4px;
   cursor: pointer;
   background: #18191c;
-  min-width: 80px;
-  max-width: 120px;
+  min-width: 0;
+  max-width: 100%;
   transition: border 0.2s;
+  box-sizing: border-box;
+}
+.nameplate-container {
+  width: 220px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .item-preview.selected {
   border-color: #7289da;
@@ -101,5 +124,14 @@ button {
 button:disabled {
   background: #444;
   cursor: not-allowed;
+}
+@media (max-width: 600px) {
+  .items-list:not(.nameplate-list) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .item-preview {
+    padding: 7px 2px;
+  }
 }
 </style>

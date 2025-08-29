@@ -7,9 +7,7 @@
       <div class="status"></div>
     </div>
     <div class="user">
-      <div class="nameplate" :style="nameplatePalette">
-        <video :src="nameplateUrl" autoplay muted loop/>
-      </div>
+      <Nameplate :nameplate="profile.nameplate" class="nameplate"/>
       <div class="avatar">
         <img :src="profile.avatar" alt="Avatar"/>
       </div>
@@ -28,26 +26,11 @@
 
 <script setup lang="ts">
 import type {Profile} from "~/types/profile";
-import {nameplatePaletteMap} from "~/types/nameplate";
+import Nameplate from "~/components/Nameplate.vue";
 
 const {profile} = defineProps<{
   profile: Profile
 }>();
-
-const nameplateUrl = computed(() => {
-  // https://cdn.discordapp.com/assets/collectibles/nameplates/petal/spirit_blossom_petals/asset.webm
-  if (profile.nameplate) {
-    return `https://cdn.discordapp.com/assets/collectibles/${profile.nameplate.asset}asset.webm`
-  } else {
-    return ''
-  }
-})
-
-const nameplatePalette = computed(() => {
-  return {
-    backgroundImage: nameplatePaletteMap[profile.nameplate?.palette || 'default'],
-  };
-})
 
 </script>
 
@@ -131,15 +114,5 @@ const nameplatePalette = computed(() => {
 
 .nameplate {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-}
-
-.nameplate video {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  object-fit: cover;
 }
 </style>

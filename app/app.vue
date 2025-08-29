@@ -1,8 +1,5 @@
 <template>
   <main>
-    <div class="title">
-      <h1>Discord Profile Maker</h1>
-    </div>
     <div class="container">
       <div class="left">
         <SmallProfile :profile="profile" />
@@ -42,10 +39,11 @@ const profile = ref<Profile>({
   displayName: "| STmihan |",
   pronouns: ':c',
   aboutMe: "⠠⠀⠀⠀⠰⢀⡀⠀⡤⠏⠀⠸⠈⠐⠀⠊⡸⡀⠈⠗⠈⣠⠍⠀",
-  serverTag: {
-    name: "DM",
-    badgeSrc: "https://cdn.discordapp.com/clan-badges/269765356661374976/ad842b5ea717cde056d0093cb9e90d1d.png?size=16",
-  },
+  // serverTag: {
+  //   name: "DM",
+  //   badgeSrc: "https://cdn.discordapp.com/clan-badges/269765356661374976/ad842b5ea717cde056d0093cb9e90d1d.png?size=16",
+  // },
+  serverTag: null,
   profileThemePrimary: "#150d0d",
   profileThemeAccent: "#552609",
   avatar: "https://cdn.discordapp.com/avatars/284032425519087626/a_20e32f679e2b5aa69c19d87362601b6f.webp?size=128&animated=true",
@@ -175,6 +173,7 @@ main {
 }
 
 .container {
+  margin-top: 0.5rem;
   display: flex;
   padding: 20px;
   gap: 64px;

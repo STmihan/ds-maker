@@ -1,14 +1,14 @@
 <template>
   <div class="color-picker">
     <label>{{ label }}</label>
-  <input type="color" :value="modelValue" @input="onInput" />
+    <input type="color" :value="modelValue" @input="onInput"/>
     <span class="color-value">{{ modelValue }}</span>
   </div>
 </template>
 
 <script setup lang="ts">
 
-const props = defineProps<{
+const {modelValue, label} = defineProps<{
   modelValue: string,
   label: string
 }>();
@@ -29,6 +29,7 @@ function onInput(event: Event) {
   gap: 8px;
   margin: 8px 0;
 }
+
 input[type="color"] {
   width: 32px;
   height: 32px;
@@ -36,6 +37,7 @@ input[type="color"] {
   background: none;
   cursor: pointer;
 }
+
 .color-value {
   font-size: 13px;
   color: #aaa;
