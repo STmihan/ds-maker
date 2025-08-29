@@ -12,6 +12,13 @@
       </div>
       <div class="avatar">
         <img :src="avatarUrl" alt="Avatar"/>
+        <template v-if="profile.avatarDecoration">
+          <img
+              class="avatar-decoration"
+              :src="avatarDecorationUrl"
+              alt="Decoration"
+          />
+        </template>
       </div>
       <div class="name display-name">
         {{ profile.displayName }}
@@ -40,6 +47,14 @@ const avatarUrl = computed(() => {
   return profile.avatar || defaultLogo;
 })
 
+const avatarDecorationUrl = computed(() => {
+  if (profile.avatarDecoration) {
+    return `https://cdn.discordapp.com/avatar-decoration-presets/${profile.avatarDecoration.asset}.png?size=160`
+  } else {
+    return ''
+  }
+})
+
 
 </script>
 
@@ -63,13 +78,13 @@ const avatarUrl = computed(() => {
 }
 
 .avatar {
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   background-color: #1e1f22;
   position: absolute;
   margin-left: 10px;
-  margin-top: 3px;
+  margin-top: 5px;
 }
 
 .avatar img {
@@ -77,6 +92,14 @@ const avatarUrl = computed(() => {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.avatar-decoration {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .name {
