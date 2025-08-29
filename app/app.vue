@@ -1,5 +1,6 @@
 <template>
   <main>
+    <h1 class="site-title">Discord Profile Maker</h1>
     <div class="container">
       <div class="left">
         <ProfilePreview :profile="profile"/>
@@ -84,7 +85,6 @@ function shareProfile() {
 
 <style>
 .container {
-  padding: 64px 0;
   display: flex;
   gap: 64px;
 }
@@ -120,6 +120,13 @@ main {
   flex-direction: column;
   align-items: center;
   height: 100vh;
+}
+
+.site-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: #ffffff;
 }
 
 .form-group label {

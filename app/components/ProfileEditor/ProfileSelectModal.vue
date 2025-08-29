@@ -2,22 +2,33 @@
   <ProfileModal v-if="show" @close="close">
     <h2>{{ title }}</h2>
     <div class="items-list" :class="{ 'nameplate-list': isNameplate }">
-      <div v-for="item in items" :key="item.id" class="item-preview" :class="{selected: isSelected(item)}"
-           @click="select(item)">
+      <div
+          v-for="item in items"
+          :key="item.id"
+          class="item-preview"
+          :class="{selected: isSelected(item)}"
+          @click="select(item)"
+      >
         <div v-if="isNameplate" class="nameplate-container">
           <NameplateView :nameplate="item"/>
         </div>
         <template v-else>
-          <img v-if="item.thumbnailPreviewSrc || item.thumbnail" :src="item.thumbnailPreviewSrc || item.thumbnail"
-               class="preview-img"/>
+          <img
+              v-if="item.thumbnailPreviewSrc || item.thumbnail"
+              :src="item.thumbnailPreviewSrc || item.thumbnail"
+              class="preview-img" alt="Preview"
+          />
         </template>
-        <span v-if="item.thumbnailPreviewSrc || item.thumbnail || item.isNameplate" class="item-label-img"></span>
+        <span
+            v-if="item.thumbnailPreviewSrc || item.thumbnail || item.isNameplate"
+            class="item-label-img"
+        ></span>
         <span v-else>{{ item.label || item.title }}</span>
       </div>
     </div>
     <div class="actions">
-      <button @click="confirm" :disabled="!selected">Выбрать</button>
-      <button @click="close">Отмена</button>
+      <button @click="confirm" :disabled="!selected">Choose</button>
+      <button @click="close">Cancel</button>
     </div>
   </ProfileModal>
 </template>

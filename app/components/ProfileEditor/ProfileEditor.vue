@@ -94,7 +94,7 @@
         :show="showAvatarDecorationModal"
         :items="avatarDecorationsList"
         :selectedId="profile.avatarDecoration?.id ?? null"
-        title="Выберите декорацию"
+        title="Choose Decoration"
         @close="showAvatarDecorationModal = false"
         @select="onSelectAvatarDecoration"
     />
@@ -102,7 +102,7 @@
         :show="showProfileEffectModal"
         :items="profileEffectsList"
         :selectedId="profile.profileEffect?.id ?? null"
-        title="Выберите эффект"
+        title="Choose Effect"
         @close="showProfileEffectModal = false"
         @select="onSelectProfileEffect"
     />
@@ -111,7 +111,7 @@
         :items="nameplatesList"
         :selectedId="profile.nameplate?.id ?? null"
         :isNameplate="true"
-        title="Выберите nameplate"
+        title="Choose Nameplate"
         @close="showNameplateModal = false"
         @select="onSelectNameplate"
     />

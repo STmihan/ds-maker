@@ -197,22 +197,6 @@ const avatarUrl = computed(() => {
   color: var(--profile-text);
 }
 
-.server-tag {
-  display: inline-flex;
-  align-items: center;
-  border: solid 1px rgba(255, 255, 255, 0.1);
-  padding: 2px 4px;
-  border-radius: 8px;
-  font-size: 12px;
-  font-weight: 600;
-}
-
-.server-tag-badge {
-  width: 12px;
-  height: 12px;
-  margin-right: 4px;
-}
-
 .divider {
   height: 1px;
   background-color: rgba(255, 255, 255, 0.1);

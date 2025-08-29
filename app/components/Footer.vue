@@ -4,7 +4,8 @@
     <button class="footer-btn" @click="showPrivacy = true">Privacy Policy</button>
     <span class="footer-disclaimer">All trademarks are property of Discord Inc.</span>
     <a class="footer-github" href="https://github.com/stmihan/ds-maker" target="_blank" rel="noopener">
-      <img src="https://img.shields.io/badge/GitHub-ds--maker-181717?logo=github&style=for-the-badge" alt="GitHub repo" />
+      <img src="https://img.shields.io/badge/GitHub-ds--maker-181717?logo=github&style=for-the-badge"
+           alt="GitHub repo"/>
     </a>
   </footer>
   <div v-if="showTerms" class="footer-modal-bg" @click.self="showTerms = false">
@@ -14,9 +15,13 @@
         <p>This project is licensed under the MIT License. By using this site, you agree that:</p>
         <ul>
           <li>This project is not affiliated with, endorsed by, or associated with Discord Inc.</li>
-          <li>All trademarks, service marks, and trade names are property of their respective owners, including Discord Inc.</li>
+          <li>All trademarks, service marks, and trade names are property of their respective owners, including Discord
+            Inc.
+          </li>
           <li>The software is provided "as is", without warranty of any kind.</li>
-          <li>You may use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software under the MIT License.</li>
+          <li>You may use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software
+            under the MIT License.
+          </li>
         </ul>
       </div>
       <button class="footer-modal-close" @click="showTerms = false">Close</button>
@@ -26,10 +31,13 @@
     <div class="footer-modal">
       <h2>Privacy Policy</h2>
       <div class="footer-modal-content">
-        <p>This site does not collect, store, or share any personal data. All profile data is processed locally in your browser and is not transmitted to any server.</p>
+        <p>This site does not collect, store, or share any personal data. All profile data is processed locally in your
+          browser and is not transmitted to any server.</p>
         <ul>
           <li>This project is not affiliated with, endorsed by, or associated with Discord Inc.</li>
-          <li>All trademarks, service marks, and trade names are property of their respective owners, including Discord Inc.</li>
+          <li>All trademarks, service marks, and trade names are property of their respective owners, including Discord
+            Inc.
+          </li>
           <li>This project is open source and licensed under the MIT License.</li>
         </ul>
       </div>
