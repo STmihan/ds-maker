@@ -47,7 +47,7 @@ function select(item: any) {
 }
 
 function confirm() {
-  if (selected.value) emit('select', selected.value);
+  emit('select', selected.value && selected.value.id !== "-1" ? selected.value : null);
   close();
 }
 

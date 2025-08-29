@@ -1,12 +1,17 @@
 <template>
   <div class="profile-panel compact">
     <div class="compact-row">
-      <img
-          :src="avatarUrl"
-          alt="avatar"
-          class="avatar-preview compact-img"
-          @click="() => avatarInput?.click()"
-      />
+      <div class="avatar-wrap">
+        <img
+            :src="avatarUrl"
+            alt="avatar"
+            class="avatar-preview compact-img"
+            @click="() => avatarInput?.click()"
+        />
+        <button class="reset-btn avatar-reset" title="Reset avatar" @click.stop="resetAvatar">
+          <img src="~/assets/undo.png" alt="undo"/>
+        </button>
+      </div>
       <input
           ref="avatarInput"
           type="file"
@@ -14,12 +19,26 @@
           @change="onAvatarChange"
           style="display:none"
       />
-      <img
-          :src="profile.profileBanner || ''"
-          alt="banner"
-          class="banner-preview compact-img"
-          @click="() => bannerInput?.click()"
-      />
+      <div class="banner-wrap">
+        <div
+            class="banner-preview compact-img banner-upload"
+            @click="() => bannerInput?.click()"
+        >
+          <template v-if="profile.profileBanner">
+            <img
+                :src="profile.profileBanner"
+                alt="banner"
+                class="banner-img"
+            />
+          </template>
+          <template v-else>
+            <span class="banner-placeholder">click to change</span>
+          </template>
+        </div>
+        <button class="reset-btn banner-reset" title="Reset banner" @click.stop="resetBanner">
+          <img src="~/assets/undo.png" alt="undo"/>
+        </button>
+      </div>
       <input
           ref="bannerInput"
           type="file"
@@ -73,7 +92,7 @@
     </div>
     <ProfileSelectModal
         :show="showAvatarDecorationModal"
-        :items="avatarDecorationsWithPreview"
+        :items="avatarDecorationsList"
         :selectedId="profile.avatarDecoration?.id ?? null"
         title="Выберите декорацию"
         @close="showAvatarDecorationModal = false"
@@ -81,7 +100,7 @@
     />
     <ProfileSelectModal
         :show="showProfileEffectModal"
-        :items="[{id: null, title: 'Нет эффекта', thumbnailPreviewSrc: ''}, ...profileEffects]"
+        :items="profileEffectsList"
         :selectedId="profile.profileEffect?.id ?? null"
         title="Выберите эффект"
         @close="showProfileEffectModal = false"
@@ -89,7 +108,7 @@
     />
     <ProfileSelectModal
         :show="showNameplateModal"
-        :items="nameplatesWithPreview"
+        :items="nameplatesList"
         :selectedId="profile.nameplate?.id ?? null"
         :isNameplate="true"
         title="Выберите nameplate"
@@ -100,6 +119,14 @@
 </template>
 
 <script setup lang="ts">
+function resetAvatar() {
+  profile.value.avatar = '';
+}
+
+function resetBanner() {
+  profile.value.profileBanner = '';
+}
+
 import {computed, ref, toRefs} from 'vue';
 import ProfileSelectModal from './ProfileSelectModal.vue';
 import ProfileColorPicker from './ProfileColorPicker.vue';
@@ -130,25 +157,52 @@ const showNameplateModal = ref(false);
 const avatarInput = useTemplateRef('avatarInput')
 const bannerInput = useTemplateRef('bannerInput')
 
-const avatarDecorationsWithPreview = computed(() =>
-    avatarDecorations.value.map(d => ({
-      ...d,
-      thumbnailPreviewSrc: getAvatarDecorationPreview(d)
+const avatarDecorationsList = computed(() =>
+    [
+      {
+        id: "-1",
+        title: '',
+        thumbnailPreviewSrc: ''
+      },
+      ...avatarDecorations.value.map(d => ({
+        ...d,
+        thumbnailPreviewSrc: getAvatarDecorationPreview(d)
+      }))
+    ]);
+
+const profileEffectsList = computed(() =>
+    [
+      {
+        id: "-1",
+        title: '',
+        thumbnailPreviewSrc: ''
+      }, ...profileEffects.value.map(e => ({
+      ...e,
     }))
+    ]
 );
 
-const nameplatesWithPreview = computed(() =>
-    nameplates.value.map(n => ({
-      ...n,
-      thumbnailPreviewSrc: getNameplatePreview(n),
-    }))
+const nameplatesList = computed(() =>
+    [
+      {
+        id: "-1",
+        title: '',
+        thumbnailPreviewSrc: ''
+      },
+      ...nameplates.value.map(n => ({
+        ...n,
+        thumbnailPreviewSrc: getNameplatePreview(n),
+      }))
+    ]
 );
+
 function getAvatarDecorationPreview(decoration: any) {
   return decoration?.asset
       ? `https://cdn.discordapp.com/avatar-decoration-presets/${decoration.asset}.png?size=80`
       : '';
 
 }
+
 function getNameplatePreview(nameplate: any) {
   return nameplate?.asset
       ? `https://cdn.discordapp.com/assets/collectibles/${nameplate.asset}asset.webm`
@@ -159,18 +213,17 @@ const avatarUrl = computed(() => {
   return profile.value.avatar || defaultLogo;
 })
 
-function onSelectAvatarDecoration(item: AvatarDecoration) {
+function onSelectAvatarDecoration(item: AvatarDecoration | null) {
   profile.value.avatarDecoration = item;
   showAvatarDecorationModal.value = false;
 }
 
-function onSelectProfileEffect(item: ProfileEffect | { id: null }) {
-  if (!item.id) profile.value.profileEffect = null;
-  else profile.value.profileEffect = item;
+function onSelectProfileEffect(item: ProfileEffect | null) {
+  profile.value.profileEffect = item;
   showProfileEffectModal.value = false;
 }
 
-function onSelectNameplate(item: Nameplate) {
+function onSelectNameplate(item: Nameplate | null) {
   profile.value.nameplate = item;
   showNameplateModal.value = false;
 }
@@ -200,6 +253,73 @@ async function onBannerChange(e: Event) {
 </script>
 
 <style scoped>
+.avatar-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.banner-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.reset-btn {
+  position: absolute;
+  background: rgba(30, 30, 30, 0.85);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  z-index: 2;
+  transition: background 0.15s;
+}
+
+.reset-btn img {
+  padding: 4px;
+  width: 13px;
+  height: 13px;
+  pointer-events: none;
+}
+
+.reset-btn:hover {
+  background: #5865f2;
+}
+
+.avatar-reset {
+  top: -2px;
+  right: -2px;
+}
+
+.banner-reset {
+  top: -7px;
+  right: -7px;
+}
+
+.banner-upload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #232428;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.banner-placeholder {
+  color: #aaa;
+  font-size: 14px;
+  user-select: none;
+}
+
 .profile-panel.compact {
   background: #18191c;
   border-radius: 10px;

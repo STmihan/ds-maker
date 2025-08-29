@@ -11,7 +11,7 @@
         <NameplateView :nameplate="profile.nameplate" class="nameplate"/>
       </div>
       <div class="avatar">
-        <img :src="profile.avatar" alt="Avatar"/>
+        <img :src="avatarUrl" alt="Avatar"/>
       </div>
       <div class="name display-name">
         {{ profile.displayName }}
@@ -29,10 +29,17 @@
 <script setup lang="ts">
 import type {Profile} from "~/types/profile";
 import NameplateView from "~/components/Nameplates/NameplateView.vue";
+import {computed} from "vue";
+import {defaultLogo} from "~/defaultProfile";
 
 const {profile} = defineProps<{
   profile: Profile
 }>();
+
+const avatarUrl = computed(() => {
+  return profile.avatar || defaultLogo;
+})
+
 
 </script>
 
