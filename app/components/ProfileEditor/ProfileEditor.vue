@@ -2,7 +2,7 @@
   <div class="profile-panel compact">
     <div class="compact-row">
       <img
-          :src="profile.avatar"
+          :src="avatarUrl"
           alt="avatar"
           class="avatar-preview compact-img"
           @click="() => avatarInput?.click()"
@@ -15,7 +15,7 @@
           style="display:none"
       />
       <img
-          :src="profile.profileBanner"
+          :src="profile.profileBanner || ''"
           alt="banner"
           class="banner-preview compact-img"
           @click="() => bannerInput?.click()"
@@ -100,7 +100,7 @@
 </template>
 
 <script setup lang="ts">
-import {ref, toRefs} from 'vue';
+import {computed, ref, toRefs} from 'vue';
 import ProfileSelectModal from './ProfileSelectModal.vue';
 import ProfileColorPicker from './ProfileColorPicker.vue';
 import type {AvatarDecoration} from '~/types/avatarDecoration';
@@ -108,9 +108,7 @@ import type {ProfileEffect} from '~/types/profileEffect';
 import type {Nameplate} from '~/types/nameplate';
 import type {Profile} from "~/types/profile";
 import NameplateView from "~/components/Nameplates/NameplateView.vue";
-
-const avatarInput = useTemplateRef('avatarInput')
-const bannerInput = useTemplateRef('bannerInput')
+import {defaultLogo} from "~/defaultProfile";
 
 const props = defineProps<{
   profile: Profile,
@@ -125,34 +123,41 @@ defineEmits([
 
 const {profile, avatarDecorations, profileEffects, nameplates} = toRefs(props);
 
+const showAvatarDecorationModal = ref(false);
+const showProfileEffectModal = ref(false);
+const showNameplateModal = ref(false);
+
+const avatarInput = useTemplateRef('avatarInput')
+const bannerInput = useTemplateRef('bannerInput')
+
 const avatarDecorationsWithPreview = computed(() =>
     avatarDecorations.value.map(d => ({
       ...d,
       thumbnailPreviewSrc: getAvatarDecorationPreview(d)
     }))
 );
+
 const nameplatesWithPreview = computed(() =>
     nameplates.value.map(n => ({
       ...n,
       thumbnailPreviewSrc: getNameplatePreview(n),
     }))
 );
-
 function getAvatarDecorationPreview(decoration: any) {
   return decoration?.asset
       ? `https://cdn.discordapp.com/avatar-decoration-presets/${decoration.asset}.png?size=80`
       : '';
-}
 
+}
 function getNameplatePreview(nameplate: any) {
   return nameplate?.asset
       ? `https://cdn.discordapp.com/assets/collectibles/${nameplate.asset}asset.webm`
       : '';
 }
 
-const showAvatarDecorationModal = ref(false);
-const showProfileEffectModal = ref(false);
-const showNameplateModal = ref(false);
+const avatarUrl = computed(() => {
+  return profile.value.avatar || defaultLogo;
+})
 
 function onSelectAvatarDecoration(item: AvatarDecoration) {
   profile.value.avatarDecoration = item;
@@ -198,14 +203,14 @@ async function onBannerChange(e: Event) {
 .profile-panel.compact {
   background: #18191c;
   border-radius: 10px;
-  padding: 12px 10px 14px 10px;
+  padding: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
   width: 340px;
   max-width: 100vw;
   min-width: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
   box-sizing: border-box;
 }
 
@@ -256,17 +261,29 @@ async function onBannerChange(e: Event) {
 }
 
 .compact-img.avatar-preview {
-  width: 32px;
-  height: 32px;
+  width: 44px;
+  height: 44px;
   margin-bottom: 0;
   border-radius: 50%;
+  transition: box-shadow 0.15s;
+}
+
+.compact-img.avatar-preview:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0 2px #5865f2;
 }
 
 .compact-img.banner-preview {
-  width: 60px;
-  height: 22px;
+  width: 90px;
+  height: 34px;
   margin-bottom: 0;
-  border-radius: 4px;
+  border-radius: 6px;
+  transition: box-shadow 0.15s;
+}
+
+.compact-img.banner-preview:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0 2px #5865f2;
 }
 
 .compact-pickers {
@@ -348,16 +365,16 @@ async function onBannerChange(e: Event) {
 }
 
 .compact-img.avatar-preview {
-  width: 32px;
-  height: 32px;
+  width: 64px;
+  height: 64px;
   margin-bottom: 0;
 }
 
 .compact-img.banner-preview {
-  width: 60px;
-  height: 22px;
+  width: 175px;
+  height: 64px;
   margin-bottom: 0;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 .compact-pickers {

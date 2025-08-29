@@ -13,7 +13,7 @@
       <header class="profile-header">
         <div class="banner" :style="{ backgroundImage: `url(${profile.profileBanner})` }"></div>
         <div class="avatar-wrapper">
-          <img :src="profile.avatar" alt="Avatar" class="avatar-img"/>
+          <img :src="avatarUrl" alt="Avatar" class="avatar-img"/>
           <img
               v-if="profile.avatarDecoration"
               :src="avatarDecorationUrl"
@@ -29,13 +29,6 @@
             <span class="username">{{ profile.username }}</span>
             <span class="username-dot">•</span>
             <span v-if="profile.pronouns" class="pronouns">{{ profile.pronouns }}</span>
-            <div v-if="profile.serverTag" class="server-tag">
-              <img
-                  :src="profile.serverTag?.badgeSrc"
-                  alt="Server Badge"
-                  class="server-tag-badge"/>
-              <span class="server-tag-name">{{ profile.serverTag?.name }}</span>
-            </div>
           </div>
         </div>
         <div class="divider"></div>
@@ -53,6 +46,7 @@
 <script setup lang="ts">
 import {computed} from 'vue';
 import type {Profile} from "~/types/profile";
+import {defaultLogo} from "~/defaultProfile";
 
 const {profile} = defineProps<{
   profile: Profile;
@@ -79,6 +73,10 @@ const avatarDecorationUrl = computed(() => {
   } else {
     return ''
   }
+})
+
+const avatarUrl = computed(() => {
+  return profile.avatar || defaultLogo;
 })
 
 </script>

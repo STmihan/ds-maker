@@ -6,14 +6,13 @@ export interface Profile {
     username: string;
     displayName: string;
     pronouns: string;
+    aboutMe: string;
     
     avatar: string;
     profileBanner: string;
     
     profileThemePrimary: string;
     profileThemeAccent: string;
-    
-    aboutMe: string;
     
     avatarDecoration: AvatarDecoration | null;
     profileEffect: ProfileEffect | null;
