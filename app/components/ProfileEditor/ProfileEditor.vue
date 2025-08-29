@@ -65,11 +65,8 @@
         <span v-else>Effect</span>
       </button>
       <button class="compact-btn" @click="showNameplateModal = true">
-        <span v-if="profile.nameplate">
-          <NameplateView
-              :nameplate="profile.nameplate"
-              class="nameplate"
-          />
+        <span v-if="profile.nameplate" class="nameplate">
+          <NameplateView :nameplate="profile.nameplate"/>
         </span>
         <span v-else>Nameplate</span>
       </button>
@@ -262,6 +259,7 @@ async function onBannerChange(e: Event) {
   width: 32px;
   height: 32px;
   margin-bottom: 0;
+  border-radius: 50%;
 }
 
 .compact-img.banner-preview {
@@ -398,7 +396,6 @@ async function onBannerChange(e: Event) {
 
 .nameplate {
   height: 24px;
-  vertical-align: middle;
 }
 
 </style>

@@ -7,7 +7,9 @@
       <div class="status"></div>
     </div>
     <div class="user">
-      <NameplateView :nameplate="profile.nameplate" class="nameplate"/>
+      <div class="nameplate-container">
+        <NameplateView :nameplate="profile.nameplate" class="nameplate"/>
+      </div>
       <div class="avatar">
         <img :src="profile.avatar" alt="Avatar"/>
       </div>
@@ -60,7 +62,7 @@ const {profile} = defineProps<{
   background-color: #1e1f22;
   position: absolute;
   margin-left: 10px;
-  margin-top: 5px;
+  margin-top: 3px;
 }
 
 .avatar img {
@@ -106,6 +108,10 @@ const {profile} = defineProps<{
   height: 13px;
   border-radius: 50%;
   background-color: #1e1f22;
+}
+
+.nameplate-container {
+  width: 250px;
 }
 
 .nameplate {

@@ -10,7 +10,7 @@
 </template>
 
 <script setup lang="ts">
-import {computed, ref, onMounted, onBeforeUnmount, watch, nextTick, defineExpose} from 'vue'
+import {computed, ref, onMounted, onBeforeUnmount, watch, nextTick} from 'vue'
 import type {ProfileAnimationEffect} from '~/types/profileEffect'
 
 const props = defineProps<{

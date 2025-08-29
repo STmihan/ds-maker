@@ -1,7 +1,6 @@
 ﻿import type {AvatarDecoration} from "~/types/avatarDecoration";
 import type {ProfileEffect} from "~/types/profileEffect";
 import type {Nameplate} from "~/types/nameplate";
-import type {ServerTag} from "~/types/serverTag";
 
 export interface Profile {
     username: string;
@@ -15,8 +14,6 @@ export interface Profile {
     profileThemeAccent: string;
     
     aboutMe: string;
-    
-    serverTag: ServerTag | null;
     
     avatarDecoration: AvatarDecoration | null;
     profileEffect: ProfileEffect | null;

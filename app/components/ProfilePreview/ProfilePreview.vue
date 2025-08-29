@@ -1,11 +1,12 @@
 ﻿<template>
   <div class="profile" :style="profileThemeStyles">
     <div v-if="profile.profileEffect" class="profile-effect-container">
-      <ProfilePreviewEffectLayer v-for="(layer, index) in profile.profileEffect.effects"
-                          :key="index"
-                          :effect="layer"
-                          :force-reduced-motion="false"
-                          :randomize="true"/>
+      <ProfilePreviewEffectLayer
+          v-for="(layer, index) in profile.profileEffect.effects"
+          :key="index"
+          :effect="layer"
+          :force-reduced-motion="false"
+          :randomize="true"/>
     </div>
     <div class="profile-popout">
 
@@ -13,10 +14,11 @@
         <div class="banner" :style="{ backgroundImage: `url(${profile.profileBanner})` }"></div>
         <div class="avatar-wrapper">
           <img :src="profile.avatar" alt="Avatar" class="avatar-img"/>
-          <img v-if="profile.avatarDecoration"
-               :src="avatarDecorationUrl"
-               alt="Avatar Decoration"
-               class="avatar-decoration"/>
+          <img
+              v-if="profile.avatarDecoration"
+              :src="avatarDecorationUrl"
+              alt="Avatar Decoration"
+              class="avatar-decoration"/>
         </div>
       </header>
 
@@ -28,7 +30,10 @@
             <span class="username-dot">•</span>
             <span v-if="profile.pronouns" class="pronouns">{{ profile.pronouns }}</span>
             <div v-if="profile.serverTag" class="server-tag">
-              <img :src="profile.serverTag?.badgeSrc" alt="Server Badge" class="server-tag-badge"/>
+              <img
+                  :src="profile.serverTag?.badgeSrc"
+                  alt="Server Badge"
+                  class="server-tag-badge"/>
               <span class="server-tag-name">{{ profile.serverTag?.name }}</span>
             </div>
           </div>
@@ -192,22 +197,6 @@ const avatarDecorationUrl = computed(() => {
 .pronouns {
   font-size: 14px;
   color: var(--profile-text);
-}
-
-.badges-container {
-  display: flex;
-  gap: 2px;
-  align-items: center;
-}
-
-.badge-link {
-  width: 20px;
-  height: 20px;
-}
-
-.badge-img {
-  width: 100%;
-  height: 100%;
 }
 
 .server-tag {

@@ -1,5 +1,5 @@
 <template>
-  <div class="modal-backdrop" @click.self="$emit('close')">
+  <div class="modal-backdrop" @click.self="emit('close')">
     <div class="modal-content">
       <slot/>
     </div>
@@ -7,6 +7,7 @@
 </template>
 
 <script setup lang="ts">
+const emit = defineEmits(['close']);
 </script>
 
 <style scoped>

@@ -31,13 +31,15 @@ const nameplateUrl = computed(() => {
 .nameplate {
   width: 100%;
   border-radius: 10px;
-  position: static;
+  position: relative;
+  aspect-ratio: 224 / 42;
 }
 
 .nameplate video {
   width: 100%;
-  height: 100%;
   border-radius: 10px;
-  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 </style>
