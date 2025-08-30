@@ -13,10 +13,18 @@
             :profile-effects="profileEffects"
             :nameplates="nameplates"
         />
-<!--        <button class="share-btn" @click="shareProfileClicked">Share</button>-->
+        <button class="share-btn" @click="shareProfileClicked">Share</button>
       </div>
     </div>
     <Footer/>
+    <Render
+        v-if="showRenderPopup"
+        :profile="profile"
+        :avatar-decorations="avatarDecorations"
+        :profile-effects="profileEffects"
+        :nameplates="nameplates"
+        @close="showRenderPopup = false"
+    />
   </main>
 </template>
 
@@ -36,14 +44,15 @@ import type {ProfileEffect} from "~/types/profileEffect";
 import type {Nameplate} from "~/types/nameplate";
 import defaultProfile from "~/defaultProfile";
 import Footer from "~/components/Footer.vue";
-import {generateProfileGif} from "~/utils/gifShare";
 import {loadProfileFromLocalStorage, saveProfileToLocalStorage} from "~/utils/profileLocalStorage";
+import Render from "./components/Render/Render.vue";
 
 const avatarDecorations = avatarDecorationConfigs.avatar_decoration_configs as AvatarDecoration[];
 const profileEffects = profileEffectConfigs.profile_effect_configs as ProfileEffect[];
 const nameplates = nameplateConfigs.nameplate_configs as Nameplate[];
 
 const profile = ref<Profile>(defaultProfile);
+const showRenderPopup = ref(false);
 
 onMounted(() => {
   profile.value = {
@@ -53,14 +62,7 @@ onMounted(() => {
 });
 
 function shareProfileClicked() {
-  const btn = document.querySelector('.share-btn');
-  if (btn) {
-    btn.classList.add('clicked');
-    setTimeout(() => {
-      btn.classList.remove('clicked');
-    }, 300);
-  }
-  generateProfileGif();
+  showRenderPopup.value = true;
 }
 
 watch(() => profile.value, (newProfile) => {
@@ -90,16 +92,6 @@ watch(() => profile.value, (newProfile) => {
 
 .share-btn:hover {
   background: #4752c4;
-}
-
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
-}
-
-.clicked {
-  animation: pulse 0.2s ease-out;
 }
 
 body {

@@ -1,8 +1,9 @@
 ﻿import html2canvas from 'html2canvas';
 import GIF from 'gif.js';
+import gifWorker from 'gif.js/dist/gif.worker.js?url';
 
 const defaultOptions = {
-    selector: '#left',
+    selector: '#render-content',
     durationMs: 5000,
     fps: 5
 };
@@ -22,7 +23,7 @@ export async function generateProfileGif(
         quality: 10,
         width: el.offsetWidth,
         height: el.offsetHeight,
-        workerScript: undefined,
+        workerScript: gifWorker,
     });
 
     for (let i = 0; i < frames; i++) {
@@ -33,7 +34,12 @@ export async function generateProfileGif(
     
     gif.on('finished', function (blob: Blob) {
         const url = URL.createObjectURL(blob);
-        window.open(url, '_blank');
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'profile.gif';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
     });
     
     gif.render();

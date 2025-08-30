@@ -6,23 +6,23 @@
             :src="avatarUrl"
             alt="avatar"
             class="avatar-preview compact-img"
-            @click="() => avatarInput?.click()"
+            @click="openAvatarModal"
         />
         <button class="reset-btn avatar-reset" title="Reset avatar" @click.stop="resetAvatar">
           <img src="~/assets/undo.png" alt="undo"/>
         </button>
       </div>
-      <input
-          ref="avatarInput"
-          type="file"
-          accept="image/*"
-          @change="onAvatarChange"
-          style="display:none"
+      <ImageSourceModal
+        v-if="showAvatarModal"
+        title="Change Avatar"
+        @close="showAvatarModal = false"
+        @select-file="onAvatarFileSelect"
+        @select-url="onAvatarUrlSelect"
       />
       <div class="banner-wrap">
         <div
             class="banner-preview compact-img banner-upload"
-            @click="() => bannerInput?.click()"
+            @click="openBannerModal"
         >
           <template v-if="profile.profileBanner">
             <img
@@ -39,12 +39,12 @@
           <img src="~/assets/undo.png" alt="undo"/>
         </button>
       </div>
-      <input
-          ref="bannerInput"
-          type="file"
-          accept="image/*"
-          @change="onBannerChange"
-          style="display:none"
+      <ImageSourceModal
+        v-if="showBannerModal"
+        title="Change Banner"
+        @close="showBannerModal = false"
+        @select-file="onBannerFileSelect"
+        @select-url="onBannerUrlSelect"
       />
     </div>
     <div class="compact-row compact-fields">
@@ -130,6 +130,7 @@ function resetBanner() {
 import {computed, ref, toRefs} from 'vue';
 import ProfileSelectModal from './ProfileSelectModal.vue';
 import ProfileColorPicker from './ProfileColorPicker.vue';
+import ImageSourceModal from './ImageSourceModal.vue';
 import type {AvatarDecoration} from '~/types/avatarDecoration';
 import type {ProfileEffect} from '~/types/profileEffect';
 import type {Nameplate} from '~/types/nameplate';
@@ -153,6 +154,8 @@ const {profile, avatarDecorations, profileEffects, nameplates} = toRefs(props);
 const showAvatarDecorationModal = ref(false);
 const showProfileEffectModal = ref(false);
 const showNameplateModal = ref(false);
+const showAvatarModal = ref(false);
+const showBannerModal = ref(false);
 
 const avatarInput = useTemplateRef('avatarInput')
 const bannerInput = useTemplateRef('bannerInput')
@@ -249,6 +252,37 @@ async function onBannerChange(e: Event) {
   if (file) {
     profile.value.profileBanner = await fileToBase64(file);
   }
+}
+
+function openAvatarModal() {
+  showAvatarModal.value = true;
+}
+function openBannerModal() {
+  showBannerModal.value = true;
+}
+function onAvatarFileSelect(file: File) {
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    profile.value.avatar = e.target?.result as string;
+  };
+  reader.readAsDataURL(file);
+  showAvatarModal.value = false;
+}
+function onAvatarUrlSelect(url: string) {
+  profile.value.avatar = url;
+  showAvatarModal.value = false;
+}
+function onBannerFileSelect(file: File) {
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    profile.value.profileBanner = e.target?.result as string;
+  };
+  reader.readAsDataURL(file);
+  showBannerModal.value = false;
+}
+function onBannerUrlSelect(url: string) {
+  profile.value.profileBanner = url;
+  showBannerModal.value = false;
 }
 </script>
 
