@@ -1,4 +1,5 @@
-# DS Maker
+# [DS Maker](https://stmihan.github.io/ds-maker/)
+[![GitHub Actions Status](https://github.com/stmihan/ds-maker/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/stmihan/ds-maker/actions)
 
 DS Maker is a web application for visualizing and customizing Discord-style user profiles. You can edit your avatar,
 banner, decorations, nameplates, and effects, preview your profile in real time, and share your configuration with
