@@ -1,7 +1,7 @@
 ﻿<template>
   <div class="panel">
     <div class="user">
-      <div class="avatar"></div>
+      <div class="avatar rounded"></div>
       <div class="name name-2 null"></div>
       <div class="status-bg"></div>
       <div class="status"></div>
@@ -10,8 +10,8 @@
       <div class="nameplate-container">
         <NameplateView :nameplate="profile.nameplate" class="nameplate"/>
       </div>
-      <div class="avatar">
-        <img :src="avatarUrl" alt="Avatar"/>
+      <div class="avatar avatar-user">
+        <img :src="avatarUrl" alt="Avatar" class="avatar-img"/>
         <template v-if="profile.avatarDecoration">
           <img
               class="avatar-decoration"
@@ -25,7 +25,7 @@
       </div>
     </div>
     <div class="user">
-      <div class="avatar"></div>
+      <div class="avatar rounded"></div>
       <div class="name name-2 null"></div>
       <div class="status-bg"></div>
       <div class="status"></div>
@@ -81,7 +81,6 @@ const avatarDecorationUrl = computed(() => {
 .avatar {
   width: 36px;
   height: 36px;
-  border-radius: 50%;
   background-color: #1e1f22;
   position: absolute;
   margin-left: 10px;
@@ -91,8 +90,15 @@ const avatarDecorationUrl = computed(() => {
 .avatar img {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
   object-fit: cover;
+}
+
+.avatar-user {
+  background: transparent;
+}
+
+.avatar-img {
+  border-radius: 50%;
 }
 
 .avatar-decoration {
@@ -147,5 +153,9 @@ const avatarDecorationUrl = computed(() => {
 
 .nameplate {
   position: absolute;
+}
+
+.rounded {
+  border-radius: 50%;
 }
 </style>
