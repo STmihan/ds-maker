@@ -207,7 +207,12 @@ function getAvatarDecorationPreview(decoration: any) {
 }
 
 function getProfileEffectPreview(effect: any) {
-  return globalUrlToLocalPath(effect?.thumbnailPreviewSrc) || '';
+  if (effect && effect.thumbnailPreviewSrc) {
+    return globalUrlToLocalPath(effect.thumbnailPreviewSrc) || effect.thumbnailPreviewSrc;
+  }
+  else {
+    return '';
+  }
 }
 
 function getNameplatePreview(nameplate: any) {
