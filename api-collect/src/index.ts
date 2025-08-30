@@ -1,5 +1,6 @@
 import fs from 'fs';
 import {fetchAvatarDecorations, fetchCollectiblesCategories, fetchNameplates, fetchProfileEffects} from "./fetchData";
+import {processImages} from "./imageProcessor";
 
 
 async function main() {
@@ -15,6 +16,11 @@ async function main() {
         
         const nameplates = await fetchNameplates(categories);
         fs.writeFileSync('../app/assets/nameplates.json', JSON.stringify(nameplates, null, 2), 'utf8');
+        
+        const imagesMap = await processImages(profileEffects, avatarDecorations, nameplates);
+        fs.writeFileSync('../app/assets/images-map.json', JSON.stringify(imagesMap, null, 2), 'utf8');
+        
+        console.log("Data fetching and processing completed successfully.");
     } catch (e) {
         console.error("An error occurred while fetching data:", e.message);
         return;

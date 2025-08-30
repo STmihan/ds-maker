@@ -47,6 +47,7 @@
 import {computed} from 'vue';
 import type {Profile} from "~/types/profile";
 import {defaultLogo} from "~/defaultProfile";
+import {globalUrlToLocalPath} from "~/utils/urlConverter";
 
 const {profile} = defineProps<{
   profile: Profile;
@@ -69,7 +70,7 @@ const profileThemeStyles = computed(() => ({
 
 const avatarDecorationUrl = computed(() => {
   if (profile.avatarDecoration) {
-    return `https://cdn.discordapp.com/avatar-decoration-presets/${profile.avatarDecoration.asset}.png?size=160`
+    return globalUrlToLocalPath(`https://cdn.discordapp.com/avatar-decoration-presets/${profile.avatarDecoration.asset}.png?size=160`)
   } else {
     return ''
   }

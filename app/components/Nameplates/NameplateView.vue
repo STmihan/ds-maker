@@ -6,6 +6,7 @@
 
 <script setup lang="ts">
 import {type Nameplate, nameplatePaletteMap} from "~/types/nameplate";
+import {globalUrlToLocalPath} from "~/utils/urlConverter";
 
 const {nameplate} = defineProps<{
   nameplate: Nameplate | null
@@ -19,7 +20,7 @@ const nameplatePalette = computed(() => {
 
 const nameplateUrl = computed(() => {
   if (nameplate) {
-    return `https://cdn.discordapp.com/assets/collectibles/${nameplate.asset}asset.webm`
+    return globalUrlToLocalPath(`https://cdn.discordapp.com/assets/collectibles/${nameplate.asset}asset.webm`)
   } else {
     return ''
   }

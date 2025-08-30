@@ -2,7 +2,7 @@
   <img
       v-if="src"
       ref="imgEl"
-      :src="src"
+      :src="globalUrlToLocalPath(src)"
       alt="Profile Effect Layer"
       class="effect-img"
       :style="imgStyle"

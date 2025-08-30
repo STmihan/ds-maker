@@ -119,6 +119,8 @@
 </template>
 
 <script setup lang="ts">
+import {globalUrlToLocalPath} from "~/utils/urlConverter";
+
 function resetAvatar() {
   profile.value.avatar = '';
 }
@@ -201,14 +203,13 @@ const nameplatesList = computed(() =>
 
 function getAvatarDecorationPreview(decoration: any) {
   return decoration?.asset
-      ? `https://cdn.discordapp.com/avatar-decoration-presets/${decoration.asset}.png?size=80`
+      ? globalUrlToLocalPath(`https://cdn.discordapp.com/avatar-decoration-presets/${decoration.asset}.png?size=160`)
       : '';
-
 }
 
 function getNameplatePreview(nameplate: any) {
   return nameplate?.asset
-      ? `https://cdn.discordapp.com/assets/collectibles/${nameplate.asset}asset.webm`
+      ? globalUrlToLocalPath(`https://cdn.discordapp.com/assets/collectibles/${nameplate.asset}asset.webm`)
       : '';
 }
 
