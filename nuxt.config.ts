@@ -7,11 +7,11 @@ export default defineNuxtConfig({
   ],
   ssr: false,
   app: {
-    baseURL: '/ds-maker/',
+    baseURL: '/',
     head: {
       title: 'DS Maker',
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/ds-maker/favicon.ico' }
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
       ]
     }
   }
