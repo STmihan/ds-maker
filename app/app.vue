@@ -13,7 +13,7 @@
             :profile-effects="profileEffects"
             :nameplates="nameplates"
         />
-        <button class="share-btn" @click="shareProfileClicked">Share</button>
+<!--        <button class="share-btn" @click="shareProfileClicked">Share</button>-->
       </div>
     </div>
     <Footer/>
