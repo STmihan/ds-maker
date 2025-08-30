@@ -13,11 +13,11 @@
         </button>
       </div>
       <ImageSourceModal
-        v-if="showAvatarModal"
-        title="Change Avatar"
-        @close="showAvatarModal = false"
-        @select-file="onAvatarFileSelect"
-        @select-url="onAvatarUrlSelect"
+          v-if="showAvatarModal"
+          title="Change Avatar"
+          @close="showAvatarModal = false"
+          @select-file="onAvatarFileSelect"
+          @select-url="onAvatarUrlSelect"
       />
       <div class="banner-wrap">
         <div
@@ -40,11 +40,11 @@
         </button>
       </div>
       <ImageSourceModal
-        v-if="showBannerModal"
-        title="Change Banner"
-        @close="showBannerModal = false"
-        @select-file="onBannerFileSelect"
-        @select-url="onBannerUrlSelect"
+          v-if="showBannerModal"
+          title="Change Banner"
+          @close="showBannerModal = false"
+          @select-file="onBannerFileSelect"
+          @select-url="onBannerUrlSelect"
       />
     </div>
     <div class="compact-row compact-fields">
@@ -77,7 +77,7 @@
       <button class="compact-btn" @click="showProfileEffectModal = true">
         <img
             v-if="profile.profileEffect"
-            :src="profile.profileEffect.thumbnailPreviewSrc"
+            :src="getProfileEffectPreview(profile.profileEffect)"
             class="effect-preview compact-img"
             alt="Effect Preview"
         />
@@ -159,9 +159,6 @@ const showNameplateModal = ref(false);
 const showAvatarModal = ref(false);
 const showBannerModal = ref(false);
 
-const avatarInput = useTemplateRef('avatarInput')
-const bannerInput = useTemplateRef('bannerInput')
-
 const avatarDecorationsList = computed(() =>
     [
       {
@@ -181,9 +178,11 @@ const profileEffectsList = computed(() =>
         id: "-1",
         title: '',
         thumbnailPreviewSrc: ''
-      }, ...profileEffects.value.map(e => ({
-      ...e,
-    }))
+      },
+      ...profileEffects.value.map(e => ({
+        ...e,
+        thumbnailPreviewSrc: getProfileEffectPreview(e),
+      }))
     ]
 );
 
@@ -205,6 +204,10 @@ function getAvatarDecorationPreview(decoration: any) {
   return decoration?.asset
       ? globalUrlToLocalPath(`https://cdn.discordapp.com/avatar-decoration-presets/${decoration.asset}.png?size=160`)
       : '';
+}
+
+function getProfileEffectPreview(effect: any) {
+  return globalUrlToLocalPath(effect?.thumbnailPreviewSrc) || '';
 }
 
 function getNameplatePreview(nameplate: any) {
@@ -258,9 +261,11 @@ async function onBannerChange(e: Event) {
 function openAvatarModal() {
   showAvatarModal.value = true;
 }
+
 function openBannerModal() {
   showBannerModal.value = true;
 }
+
 function onAvatarFileSelect(file: File) {
   const reader = new FileReader();
   reader.onload = (e) => {
@@ -269,10 +274,12 @@ function onAvatarFileSelect(file: File) {
   reader.readAsDataURL(file);
   showAvatarModal.value = false;
 }
+
 function onAvatarUrlSelect(url: string) {
   profile.value.avatar = url;
   showAvatarModal.value = false;
 }
+
 function onBannerFileSelect(file: File) {
   const reader = new FileReader();
   reader.onload = (e) => {
@@ -281,6 +288,7 @@ function onBannerFileSelect(file: File) {
   reader.readAsDataURL(file);
   showBannerModal.value = false;
 }
+
 function onBannerUrlSelect(url: string) {
   profile.value.profileBanner = url;
   showBannerModal.value = false;

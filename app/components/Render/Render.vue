@@ -39,8 +39,8 @@ function onClose() {
 }
 
 function onRender() {
-  // generateProfileGif();
   console.log('Generating GIF...');
+  generateProfileGif();
 }
 </script>
 
