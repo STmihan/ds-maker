@@ -2,7 +2,7 @@
   <main>
     <h1 class="site-title">Discord Profile Maker</h1>
     <div class="container">
-      <div class="left">
+      <div class="left" id="left">
         <ProfilePreview :profile="profile"/>
         <NameplatePreview :profile="profile"/>
       </div>
@@ -13,7 +13,7 @@
             :profile-effects="profileEffects"
             :nameplates="nameplates"
         />
-        <button class="share-btn" @click="shareProfile">Share</button>
+<!--        <button class="share-btn" @click="shareProfileClicked">Share</button>-->
       </div>
     </div>
     <Footer/>
@@ -36,50 +36,36 @@ import type {ProfileEffect} from "~/types/profileEffect";
 import type {Nameplate} from "~/types/nameplate";
 import defaultProfile from "~/defaultProfile";
 import Footer from "~/components/Footer.vue";
+import {generateProfileGif} from "~/utils/gifShare";
+import {loadProfileFromLocalStorage, saveProfileToLocalStorage} from "~/utils/profileLocalStorage";
 
 const avatarDecorations = avatarDecorationConfigs.avatar_decoration_configs as AvatarDecoration[];
 const profileEffects = profileEffectConfigs.profile_effect_configs as ProfileEffect[];
 const nameplates = nameplateConfigs.nameplate_configs as Nameplate[];
 
-function decodeProfileFromUrl(str: string): Profile | null {
-  try {
-    const json = decodeURIComponent(atob(str));
-    return JSON.parse(json);
-  } catch {
-    window.location.href = window.location.origin + window.location.pathname;
-    return null;
-  }
-}
-
-function encodeProfileToUrl(profile: Profile): string {
-  const json = JSON.stringify(profile);
-  return btoa(encodeURIComponent(json));
-}
-
 const profile = ref<Profile>(defaultProfile);
 
 onMounted(() => {
-  const url = new URL(window.location.href);
-  const config = url.searchParams.get('profile');
-  if (config) {
-    const decoded = decodeProfileFromUrl(config);
-    if (decoded) {
-      profile.value = {
-        ...profile.value,
-        ...decoded
-      };
-    }
+  profile.value = {
+    ...profile.value,
+    ...loadProfileFromLocalStorage(),
   }
 });
 
-function shareProfile() {
-  const encoded = encodeProfileToUrl(profile.value);
-  const url = new URL(window.location.href);
-  url.searchParams.set('profile', encoded);
-  window.navigator.clipboard.writeText(url.toString());
-  alert('Profile link copied to clipboard!');
+function shareProfileClicked() {
+  const btn = document.querySelector('.share-btn');
+  if (btn) {
+    btn.classList.add('clicked');
+    setTimeout(() => {
+      btn.classList.remove('clicked');
+    }, 300);
+  }
+  generateProfileGif();
 }
 
+watch(() => profile.value, (newProfile) => {
+  saveProfileToLocalStorage(newProfile)
+}, {deep: true});
 
 </script>
 
@@ -104,6 +90,16 @@ function shareProfile() {
 
 .share-btn:hover {
   background: #4752c4;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.clicked {
+  animation: pulse 0.2s ease-out;
 }
 
 body {
