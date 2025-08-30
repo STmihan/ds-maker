@@ -154,7 +154,7 @@ const avatarUrl = computed(() => {
   width: 104px;
   height: 104px;
   z-index: 2;
-  top: 40%;
+  top: 50%;
 }
 
 .profile-body {
